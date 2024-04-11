@@ -114,3 +114,8 @@ body{
     position: absolute;
     right: 20px;
 }
+.recommended-box{
+    background-color: blueviolet;
+    padding: 20px;
+    text-align: center;
+}
