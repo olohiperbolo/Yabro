@@ -45,30 +45,33 @@ main{
     grid-row: 2/40;
     padding: 20px;
     text-align: center;
-    font-size: 24px;
+    font-size: 40px;
     border: 2px solid black;
+    position: relative;
 }
 .thematic-box{
-    background-image: url("kurtka.jpeg");
+    background-image: url("spodnie.jpeg");
     background-size: cover;
     background-position: center;
     grid-column: 3/8;
     grid-row: 50/90;
     padding: 20px;
     text-align: center;
-    font-size: 24px;
+    font-size: 40px;
     border: 2px solid black;
+    position: relative;
 }
 .highlighted-box{
-    background-image: url("kurtka.jpeg");
+    background-image: url("plaszcz.jpeg");
     background-size: cover;
     background-position: center;
     grid-column: 3/8;
     grid-row: 100/170;
     padding: 20px;
     text-align: center;
-    font-size: 24px;
+    font-size: 40px;
     border: 2px solid black;
+    position: relative;
 }
 .newest-box1{
     background-image: url("kurtka.jpeg");
@@ -82,7 +85,7 @@ main{
     border: 2px solid black;
 }
 .newest-box2{
-    background-image: url("kurtka.jpeg");
+    background-image: url("plaszcz.jpeg");
     background-size: cover;
     background-position: center;
     grid-column: 4/7;
@@ -93,7 +96,7 @@ main{
     border: 2px solid black;
 }
 .newest-box3{
-    background-image: url("kurtka.jpeg");
+    background-image: url("spodnie.jpeg");
     background-size: cover;
     background-position: center;
     grid-column: 7/8;
@@ -104,7 +107,7 @@ main{
     border: 2px solid black;
 }
 .last-seen1{
-    background-image: url("kurtka.jpeg");
+    background-image: url("plaszcz.jpeg");
     background-size: cover;
     background-position: center;
     grid-column: 3/5;
@@ -126,7 +129,7 @@ main{
     border: 2px solid black;
 }
 .last-seen3{
-    background-image: url("kurtka.jpeg");
+    background-image: url("spodnie.jpeg");
     background-size: cover;
     background-position: center;
     grid-column: 7/8;
@@ -147,6 +150,33 @@ main{
     font-size: 24px;
     border: 2px solid black;
 }
+.newest-title{
+    grid-column: 3/8;
+    grid-row: 175/180;
+    text-align: center;
+    font-size: 24px;
+}
+
+.last-seen-title{
+    grid-column: 3/8;
+    grid-row: 225/230;
+    text-align: center;
+    font-size: 24px;
+}
+.recommended-box h2,
+.thematic-box h2,
+.highlighted-box h2{
+    font-weight: bold;
+    color: white;
+    text-shadow:
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+}
 .filter-box{
     background-color: lightgrey;
     grid-column: 1;
@@ -154,7 +184,7 @@ main{
     padding: 20px;
     text-align: center;
     font-size: 15px;
-    border: 2px solid black;
+    border: 4px solid black;
 }
 nav{
     box-sizing: border-box;
@@ -283,12 +313,13 @@ footer {
     width: 100%;
     align-items: center;
     justify-content: space-between;
-    height: 200px;
+    height: 250px;
     flex-direction: column;
 }
 footer h2 {
     cursor: pointer;
     color: black;
+    font-weight: bold;
 }
 footer h2 span {
     font-style: italic;
@@ -301,7 +332,8 @@ footer ul {
 }
 footer ul li {
     display: inline-block;
-    margin: 10px 100px;
+    text-align: center;
+    margin: 0px 50px;
     padding: 4px;
 }
 footer ul li a {
