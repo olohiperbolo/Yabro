@@ -37,11 +37,7 @@ main{
     align-items: center;
     justify-content: center;
 }
-.recommended-box,
-.thematic-box,
-.highlighted-box,
-.newest-box,
-.last-seen{
+.recommended-box{
     background-image: url("kurtka.jpeg");
     background-size: cover;
     background-position: center;
@@ -51,15 +47,57 @@ main{
     font-size: 40px;
     position: relative;
 }
+.thematic-box{
+    background-image: url("spodnie.jpeg");
+    background-size: cover;
+    background-position: center;
+    grid-column: 2 / span 2;
+    min-height: 500px;
+    text-align: center;
+    font-size: 40px;
+    position: relative;
+}
+.highlighted-box{
+    background-image: url("plaszcz.jpeg");
+    background-size: cover;
+    background-position: center;
+    grid-column: 2 / span 2;
+    min-height: 500px;
+    text-align: center;
+    font-size: 40px;
+    position: relative;
+}
+.newest-box{
+    background-image: url("kurtka.jpeg");
+    background-size: cover;
+    background-position: center;
+    grid-column: 2 / span 2;
+    min-height: 500px;
+    text-align: center;
+    position: relative;
+}
 
+.last-seen{
+    background-image: url("plaszcz.jpeg");
+    background-size: cover;
+    background-position: center;
+    grid-column: 2 / span 2;
+    min-height: 500px;
+    text-align: center;
+    position: relative;
+}
 
-.newest-title,
-.last-seen-title{
+.newest-title{
     grid-column: 2 / span 2;
     text-align: center;
     font-size: 30px;
 }
 
+.last-seen-title{
+    grid-column: 2 / span 2;
+    text-align: center;
+    font-size: 30px;
+}
 .recommended-box h2,
 .thematic-box h2,
 .highlighted-box h2{
