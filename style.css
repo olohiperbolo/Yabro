@@ -37,6 +37,24 @@ main{
     align-items: center;
     justify-content: center;
 }
+.grid-container-categories{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 32px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.grid-item{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgrey;
+    height: 250px;
+    grid-row: span 1;
+    grid-column: span 1;
+    margin-bottom: 100px;
+}
 .recommended-box{
     background-image: url("kurtka.jpeg");
     background-size: cover;
