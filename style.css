@@ -55,6 +55,16 @@ main{
     grid-column: span 1;
     margin-bottom: 100px;
 }
+.grid-item-long{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgrey;
+    height: 300px;
+    grid-row: span 1;
+    grid-column: span 4;
+    margin-bottom: 100px;
+}
 .recommended-box{
     background-image: url("kurtka.jpeg");
     background-size: cover;
