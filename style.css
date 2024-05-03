@@ -45,6 +45,16 @@ main{
     align-items: center;
     justify-content: center;
 }
+.grid-section-baner{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgrey;
+    height: 400px;
+    grid-row: span 1;
+    grid-column: span 6;
+    margin-bottom: 50px;
+}
 .grid-item{
     display: grid;
     justify-content: center;
