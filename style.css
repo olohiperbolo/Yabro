@@ -76,6 +76,17 @@ main{
     margin-bottom: 50px;
     background-image: url("photo/men.jpg");
 }
+.grid-section-baner-sport{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgrey;
+    height: 400px;
+    grid-row: span 1;
+    grid-column: span 6;
+    margin-bottom: 50px;
+    background-image: url("photo/retromilan.jpg");
+}
 .grid-item{
     display: grid;
     justify-content: center;
