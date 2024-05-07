@@ -278,9 +278,16 @@ nav .nav-bottom{
     margin-right: 20px;
 }
 nav h2{
-    margin: auto;
-    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+    font-size: 60px;
+    font-weight: bold;
     color: black;
+    cursor: pointer;
+    margin: auto;
+}
+nav h2 a {
+    text-decoration: none;
+    color: inherit;
 }
 nav h2 span{
     font-style: italic;
