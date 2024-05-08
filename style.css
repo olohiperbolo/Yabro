@@ -63,7 +63,7 @@ main{
     grid-row: span 1;
     grid-column: span 6;
     margin-bottom: 50px;
-    background-image: url("photo/women.jpg");
+    background-image: url("photo/women2.jpg");
 }
 .grid-section-baner-men{
     display: grid;
@@ -230,13 +230,6 @@ main{
             -1px 1px 0 #000,
             1px 1px 0 #000;
 }
-.filter-box{
-    background-color: lightgrey;
-    grid-column: 1;
-    padding: 20px;
-    text-align: center;
-    font-size: 15px;
-}
 nav{
     box-sizing: border-box;
     background-color: #A89989;
@@ -286,11 +279,11 @@ nav .nav-bottom{
 .search-bar{
     top:40px;
     width: 275px;
-    margin-right: 90px;
+    margin-right: 75px;
 }
 .search-bar input{
     width: 100%;
-    padding: 10px;
+    padding: 5px;
     border-radius: 20px;
     background-color: black;
     color: lightgrey;
