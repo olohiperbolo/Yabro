@@ -87,6 +87,28 @@ main{
     margin-bottom: 50px;
     background-image: url("photo/retromilan.jpg");
 }
+.grid-section-baner-accesories{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgrey;
+    height: 400px;
+    grid-row: span 1;
+    grid-column: span 6;
+    margin-bottom: 50px;
+    background-image: url("photo/akces.jpeg");
+}
+.grid-section-baner-specialoffer{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgrey;
+    height: 400px;
+    grid-row: span 1;
+    grid-column: span 6;
+    margin-bottom: 50px;
+    background-image: url("photo/pexels-photo-5405648.jpeg");
+}
 .grid-item{
     display: grid;
     justify-content: center;
@@ -105,6 +127,16 @@ main{
     height: 300px;
     grid-row: span 1;
     grid-column: span 4;
+    margin-bottom: 100px;
+}
+.grid-item-offer{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgrey;
+    height: 300px;
+    grid-row: span 1;
+    grid-column: span 2;
     margin-bottom: 100px;
 }
 .recommended-box{
