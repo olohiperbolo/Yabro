@@ -145,10 +145,9 @@ main{
     background-position: center;
     grid-column: 2 / span 2;
     min-height: 500px;
-    max-height: 500px;
-    text-align: center;
-    font-size: 40px;
-    position: relative;
+    display: grid;
+    align-items: center;
+    justify-items: center;
 }
 .thematic-box{
     background-image: url("photo/kowno.jpg");
@@ -156,10 +155,9 @@ main{
     background-position: center;
     grid-column: 2 / span 2;
     min-height: 500px;
-    max-height: 500px;
-    text-align: center;
-    font-size: 40px;
-    position: relative;
+    display: grid;
+    align-items: center;
+    justify-items: center;
 }
 .highlighted-box{
     background-image: url("photo/polecane.jpeg");
@@ -167,10 +165,9 @@ main{
     background-position: center;
     grid-column: 2 / span 2;
     min-height: 500px;
-    max-height: 500px;
-    text-align: center;
-    font-size: 40px;
-    position: relative;
+    display: grid;
+    align-items: center;
+    justify-items: center;
 }
 .newest-box{
     background-image: url("photo/spodnie.jpeg");
@@ -232,9 +229,6 @@ main{
             1px -1px 0 #000,
             -1px 1px 0 #000,
             1px 1px 0 #000;
-    position: absolute;
-    bottom: 0;
-    left: 10px;
 }
 .filter-box{
     background-color: lightgrey;
