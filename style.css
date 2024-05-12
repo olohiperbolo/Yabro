@@ -1,14 +1,13 @@
-/* Styl dla dużych ekranów (desktopów, laptopów) */
-@media only screen and (min-width: 1200px){
-    .container{
-        width: 75%;
-    }
-}
-
 /* Styl dla średnich ekranów (tabletów) */
 @media only screen and (min-width: 600px) {
     .container {
         width: 95%;
+    }
+}
+/* Styl dla dużych ekranów (desktopów, laptopów) */
+@media only screen and (min-width: 1200px){
+    .container{
+        width: 75%;
     }
 }
 
@@ -229,6 +228,21 @@ main{
             1px -1px 0 #000,
             -1px 1px 0 #000,
             1px 1px 0 #000;
+}
+.product-desc{
+    font-family: Oswald, sans-serif;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 15px;
+    margin-bottom: 50px;
+}
+.product-price{
+    font-family: Oswald, sans-serif;
+    text-align: center;
+    position: absolute;
+    font-size: 15px;
 }
 nav{
     box-sizing: border-box;
