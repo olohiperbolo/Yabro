@@ -132,11 +132,16 @@ main{
     display: grid;
     justify-content: center;
     align-items: center;
-    background-color: lightgrey;
+    background-size: cover;
+    overflow: hidden;
     height: 300px;
     grid-row: span 1;
     grid-column: span 4;
     margin-bottom: 100px;
+}
+.fit-image{
+    width: 100%;
+    object-fit: cover;
 }
 .grid-item-offer{
     display: grid;
