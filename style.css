@@ -7,7 +7,7 @@
 /* Styl dla dużych ekranów (desktopów, laptopów) */
 @media only screen and (min-width: 1200px){
     .container{
-        width: 75%;
+        width: 100%;
     }
 }
 
@@ -266,6 +266,17 @@ main{
     position: relative;
     font-size: 15px;
     margin-bottom: 0;
+}
+.baner-text{
+    font-family: Oswald, sans-serif;
+    font-size: 60px;
+    text-align: center;
+    color: white;
+    text-shadow:
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
 }
 .marketing-text{
     font-family: Oswald, sans-serif;
