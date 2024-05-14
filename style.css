@@ -309,6 +309,68 @@ main{
     display: flex;
     justify-content: center;
 }
+.navbar{
+    background-color: #A89989;
+    height: 80px;
+    margin: 20px;
+    border-radius: 15px;
+    padding: 0.5rem;
+}
+.login-button{
+    background-color: grey;
+    color: black;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+.login-button:hover{
+    background-color: lightgrey;
+}
+.navbar-toggler{
+    border: none;
+    font-size: 1.25rem;
+}
+.navbar-toggler:focus,
+.btn-close:focus{
+    box-shadow: none;
+    outline: purple;
+}
+.nav-link{
+    color: black;
+    font-weight: 500;
+    position: relative;
+}
+.nav-link:hover,
+.nav-link.active{
+    color: lightgrey;
+}
+@media (min-width: 991px){
+    .nav-link::before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: grey;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+    .nav-link:hover::before,
+    .nav-link.active::before{
+        width: 100%;
+        visibility: visible;
+    }
+}
+.navbar-brand{
+    font-weight: 500;
+    color: black;
+    font-size: 30px;
+    transition: 0.3s color;
+}
 footer{
     background: #A89989;
     padding-top: 50px;
