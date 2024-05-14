@@ -14,33 +14,42 @@
 </head>
 <body>
     <header>
-        <nav>
-            <div class="nav-top">
-                <h2>
-                    <a href="yabro.html">Yabro</a>
-                </h2>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand me-auto" href="#">Yabro</a>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2 active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2" href="#">KOBIETA</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2" href="#">MĘŻCZYZNA</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2" href="#">SPORT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2" href="#">AKCESORIA</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2" href="#">OFERTA SPECJALNA</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="#" class="login-button">Login</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
             </div>
-            <div class="nav-bottom">
-                <ul>
-                    <li><a href="kobieta.html">KOBIETA</a></li>
-                    <li><a href="mezczyzna.html">MĘŻCZYZNA</a></li>
-                    <li><a href="sport.html">SPORT</a></li>
-                    <li><a href="akcesoria.html">AKCESORIA</a></li>
-                    <li><a href="ofertaspecjalna.html">OFERTA SPECJALNA</a></li>
-                </ul>
-                <div class="user-section">
-                    <a href="login.html"><i class="fas fa-heart"></i> ULUBIONE</a>
-                    <a href="login.html"><i class="fas fa-user"></i> KONTO</a>
-                    <a href="login.html"><i class="fas fa-shopping-bag"></i> KOSZYK</a>
-                </div>
-                <div class="search-bar">
-                    <input type="text" placeholder="Szukaj...">
-                </div>
-                <div class="help-section">
-                    <a href="login.html"><i class="fas fa-question-circle"></i> POMOC</a>
-                </div>
-            </div>
-
         </nav>
     </header>
     <main>
