@@ -79,7 +79,7 @@ main{
     grid-row: span 1;
     grid-column: span 6;
     margin-bottom: 50px;
-    background-image: url("photo/women2.jpg");
+    background-image: url("../photo/women2.jpg");
 }
 .grid-section-baner-men{
     display: grid;
@@ -91,7 +91,7 @@ main{
     grid-row: span 1;
     grid-column: span 6;
     margin-bottom: 50px;
-    background-image: url("photo/men.jpg");
+    background-image: url("../photo/men.jpg");
 }
 .grid-section-baner-sport{
     display: grid;
@@ -104,7 +104,7 @@ main{
     grid-row: span 1;
     grid-column: span 6;
     margin-bottom: 50px;
-    background-image: url("photo/retromilan.jpg");
+    background-image: url("../photo/retromilan.jpg");
 }
 .grid-section-baner-accesories{
     display: grid;
@@ -116,7 +116,7 @@ main{
     grid-row: span 1;
     grid-column: span 6;
     margin-bottom: 50px;
-    background-image: url("photo/akces.jpeg");
+    background-image: url("../photo/akces.jpeg");
 }
 .grid-section-baner-specialoffer{
     display: grid;
@@ -128,7 +128,7 @@ main{
     grid-row: span 1;
     grid-column: span 6;
     margin-bottom: 50px;
-    background-image: url("photo/pexels-photo-5405648.jpeg");
+    background-image: url("../photo/pexels-photo-5405648.jpeg");
 }
 .grid-item{
     display: grid;
@@ -158,7 +158,7 @@ main{
 .fit-image{
     width: 100%;
     object-fit: cover;
-    background-image: url("photo/pexels-photo-5405648.jpeg");
+    background-image: url("../photo/pexels-photo-5405648.jpeg");
 }
 .grid-item-offer{
     display: grid;
@@ -178,7 +178,7 @@ main{
     object-fit: cover;
 }
 .recommended-box{
-    background-image: url("photo/unnamed.jpg");
+    background-image: url("../photo/unnamed.jpg");
     background-size: cover;
     background-position: center;
     grid-column: 2 / span 2;
@@ -188,7 +188,7 @@ main{
     justify-items: center;
 }
 .thematic-box{
-    background-image: url("photo/kowno.jpg");
+    background-image: url("../photo/kowno.jpg");
     background-size: cover;
     background-position: center;
     grid-column: 2 / span 2;
@@ -198,7 +198,7 @@ main{
     justify-items: center;
 }
 .highlighted-box{
-    background-image: url("photo/polecane.jpeg");
+    background-image: url("../photo/polecane.jpeg");
     background-size: cover;
     background-position: center;
     grid-column: 2 / span 2;
@@ -208,7 +208,7 @@ main{
     justify-items: center;
 }
 .newest-box{
-    background-image: url("photo/spodnie.jpeg");
+    background-image: url("../photo/spodnie.jpeg");
     background-size: cover;
     background-position: center;
     grid-column: 2 / span 2;
@@ -221,7 +221,7 @@ main{
     object-fit: cover;
 }
 .last-seen{
-    background-image: url("photo/kurtka.jpeg");
+    background-image: url("../photo/kurtka.jpeg");
     background-size: cover;
     background-position: center;
     grid-column: 2 / span 2;
@@ -303,20 +303,12 @@ main{
 .filter-box{
     display: grid;
 }
-.container{
-    width: 1140px;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-}
 .navbar{
     background-color: #A89989;
     height: 80px;
-    margin: 20px;
-    border-radius: 15px;
     padding: 0.5rem;
 }
-.login-button{
+.account-button{
     background-color: grey;
     color: black;
     font-size: 14px;
@@ -332,10 +324,9 @@ main{
     border: none;
     font-size: 1.25rem;
 }
-.navbar-toggler:focus,
-.btn-close:focus{
+.navbar-toggler:focus, .btn-close:focus{
     box-shadow: none;
-    outline: purple;
+    outline: none;
 }
 .nav-link{
     color: black;
@@ -371,87 +362,29 @@ main{
     font-size: 30px;
     transition: 0.3s color;
 }
-footer{
-    background: #A89989;
-    padding-top: 50px;
+.hero-section{
+    background: url(../photo/mickey.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
 }
-.footer-content{
-    width: 33.3%;
+.hero-section:before{
+    background-color: rgba(0,0,0,0);
+    content: "";
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
-h3{
-    font-size: 25px;
-    margin-bottom: 15px;
-    text-align: center;
-}
-.footer-content a{
-    text-decoration: none;
-    color: black;
-}
-.footer-content p{
-    width: 300px;
-    margin: auto;
-    padding: 7px;
-    text-align: center;
-}
-.footer-content ul{
-    text-align: center;
-    list-style: none;
-}
-.list{
-    padding: 0;
-}
-.list li{
-    width: auto;
-    text-align: center;
-    list-style-type: none;
-    padding: 7px;
+.hero-section .container{
+    height: 100vh;
+    z-index: 1;
     position: relative;
 }
-.list li::before{
-    content: '';
-    position: absolute;
-    transform: translate(-50%, -50%);
-    left: 50%;
-    top: 100%;
-    width: 0;
-    height: 2px;
-    background: #A89989;
-    transition-duration: .5s;
+.hero-section h1{
+    font-size: 1.5rem;
 }
-.list li:hover::before{
-    width: 70px;
-}
-.social-icons{
-    text-align: center;
-    padding: 0;
-}
-.social-icons li{
-    display: inline-block;
-    text-align: center;
-    padding: 5px;
-}
-.social-icons i{
-    color: black;
-    font-size: 25px;
-}
-a{
-    text-decoration: none;
-}
-a:hover{
-    color: grey;
-}
-.social-icons i:hover{
-    color: darkslateblue;
-}
-.bottom-bar{
-    background: grey;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 50px;
-}
-.bottom-bar p{
-    color: black;
-    margin: 0;
-    font-size: 16px;
-    padding: 7px;
+.hero-section h2{
+    font-size: 1.2rem;
 }
