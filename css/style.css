@@ -1,33 +1,4 @@
-/* Styl dla średnich ekranów (tabletów) */
-@media only screen and (min-width: 600px) {
-    .container {
-        width: 95%;
-    }
-}
-/* Styl dla dużych ekranów (desktopów, laptopów) */
-@media only screen and (min-width: 1200px){
-    .container{
-        width: 100%;
-    }
-}
 
-/* Styl dla małych ekranów (smartfonów) */
-@media only screen and (max-width: 600px) {
-    .container {
-        width: 100%;
-    }
-}
-@media(max-width: 767px){
-    .footer-content{
-        width: 50%;
-        margin-botton: 30px;
-    }
-}
-@media(max-width: 574px){
-    .footer-content{
-        width: 100%;
-    }
-}
 *{
     margin: 0;
     padding: 0;
@@ -36,12 +7,6 @@ body{
     font-family: Oswald, sans-serif;
     background: white;
     background-size: cover;
-}
-h1{
-    font-family: Oswald, sans-serif;
-}
-h2{
-    font-family: Oswald, sans-serif;
 }
 main{
     flex-grow: 1;
@@ -300,9 +265,6 @@ main{
             -1px 1px 0 #000,
             1px 1px 0 #000;
 }
-.filter-box{
-    display: grid;
-}
 .navbar{
     background-color: #A89989;
     height: 80px;
@@ -317,7 +279,7 @@ main{
     text-decoration: none;
     transition: 0.3s background-color;
 }
-.login-button:hover{
+.account-button:hover{
     background-color: lightgrey;
 }
 .navbar-toggler{
@@ -358,18 +320,18 @@ main{
 }
 .navbar-brand{
     font-weight: 500;
-    color: black;
+    color: white;
     font-size: 30px;
     transition: 0.3s color;
 }
 .hero-section{
-    background: url(../photo/mickey.jpg);
+    background: url(../photo/mickey.jpg) no-repeat center;
     background-size: cover;
     width: 100%;
     height: 100vh;
 }
-.hero-section:before{
-    background-color: rgba(0,0,0,0);
+.hero-section::before{
+    background-color: rgba(0,0,0,0.6);
     content: "";
     position: relative;
     top: 0;
@@ -387,4 +349,7 @@ main{
 }
 .hero-section h2{
     font-size: 1.2rem;
+}
+.bg-body-tertiary{
+    background-color: black;
 }
