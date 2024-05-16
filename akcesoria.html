@@ -13,42 +13,46 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <script defer src="js/bootstrap.bundle.min.js"></script></head>
 <body>
-<header>
-  <nav class="navbar navbar-expand-lg ">
-    <div class="container-fluid">
-      <a class="navbar-brand me-auto" href="yabro.html">Yabro</a>
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Yabro</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-          <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
-            <li class="nav-item">
-              <a class="nav-link mx-lg-2" href="kobieta.html">KOBIETA</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-lg-2" href="mezczyzna.html">MĘŻCZYZNA</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-lg-2" href="sport.html">SPORT</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-lg-2" href="akcesoria.html">AKCESORIA</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-lg-2" href="ofertaspecjalna.html">OFERTA SPECJALNA</a>
-            </li>
-          </ul>
-        </div>
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand me-auto" href="yabro.html">YABRO</a>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Yabro</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
-      <a href="#" class="account-button">Konto</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-lg-start flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link mx-lg-2" href="kobieta.html">KOBIETA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-lg-2" href="mezczyzna.html">MĘŻCZYZNA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-lg-2" href="sport.html">SPORT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-lg-2" href="akcesoria.html">AKCESORIA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-lg-2" href="ofertaspecjalna.html">OFERTA SPECJALNA</a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </nav>
-</header>
+    <form class="d-flex mt-3" role="search">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-dark" type="submit">Search</button>
+    </form>
+    <a href="#" class="favourites-button">Ulubione</a>
+    <a href="#" class="account-button">Konto</a>
+    <a href="#" class="shopping-button">Koszyk</a>
+    <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</nav>
 <main>
   <div class="grid-container-categories">
     <div class="grid-section-baner-accesories">
@@ -176,100 +180,125 @@
   </div>
 
 </main>
-<footer class="text-center text-lg-start bg-body-tertiary text-muted">
-  <!-- Section: Social media -->
-  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-    <!-- Left -->
-    <div class="me-5 d-none d-lg-block">
-      <span>Zaobserwuj nas</span>
-    </div>
-    <!-- Left -->
+<footer class="bg-custom text-center text-custom">
+  <!-- Grid container -->
+  <div class="container p-4 mt-2">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
 
-    <!-- Right -->
-    <div>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-twitter"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-google"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-linkedin"></i>
-      </a>
-    </div>
-    <!-- Right -->
-  </section>
-  <!-- Section: Social media -->
+      <!-- Twitter -->
+      <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
 
-  <!-- Section: Links  -->
-  <section class="">
-    <div class="container text-center text-md-start mt-5">
-      <!-- Grid row -->
-      <div class="row mt-3">
-        <!-- Grid column -->
-        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-          <!-- Content -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            Yabro
-          </h6>
-          <p>
-            Oferujmy oryginalne ubrania i akcesoria z autentycznego okresu vintage, dbając o to, aby każdy klient otrzymał wyjątkowy i niepowtarzalny element garderoby.
-          </p>
+      <!-- Instagram -->
+      <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+
+      <!-- Linkedin -->
+      <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"
+      ><i class="fab fa-linkedin-in"></i
+      ></a>
+
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Form -->
+    <section class="">
+      <form action="">
+        <!--Grid row-->
+        <div class="row d-flex justify-content-center">
+          <!--Grid column-->
+          <div class="col-auto">
+            <p class="pt-2">
+              <strong>Dołącz do naszego newslettera</strong>
+            </p>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-5 col-12">
+            <!-- Email input -->
+            <div class="form-outline form-white mb-4">
+              <input type="email" id="form5Example2" class="form-control" />
+              <label class="form-label" for="form5Example2">Adres e-mail</label>
+            </div>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-auto">
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-outline-dark mb-4">
+              Subskrybuj
+            </button>
+          </div>
+          <!--Grid column-->
         </div>
-        <!-- Grid column -->
+        <!--Grid row-->
+      </form>
+    </section>
+    <!-- Section: Form -->
 
-        <!-- Grid column -->
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            O firmie
-          </h6>
-          <p>
-            <a href="#!" class="text-reset">Obsługa klientów</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Moje Yabro</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Znajdź sklep</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Praca w Yabro</a>
-          </p>
+    <!-- Section: Text -->
+    <section class="mb-4">
+      <p>
+        Oferujmy oryginalne ubrania i akcesoria z autentycznego okresu vintage,
+        dbając o to, aby każdy klient otrzymał wyjątkowy i niepowtarzalny element garderoby.
+
+      </p>
+    </section>
+    <!-- Section: Text -->
+
+    <!-- Section: Links -->
+    <section class="">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">O firmie</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-dark">Obsługa klientów</a>
+            </li>
+            <li>
+              <a href="#!" class="text-dark">Moje Yabro</a>
+            </li>
+            <li>
+              <a href="#!" class="text-dark">Znajdź sklep</a>
+            </li>
+            <li>
+              <a href="#!" class="text-dark">Praca w Yabro</a>
+            </li>
+          </ul>
         </div>
-        <!-- Grid column -->
+        <!--Grid column-->
 
-        <!-- Grid column -->
-        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            Przydatne Linki
-          </h6>
-          <p>
-            <a href="#!" class="text-reset">Oceny</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Ustawienia</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Zamówienia</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Pomoc</a>
-          </p>
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Przydatne linki</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-dark">Oceny</a>
+            </li>
+            <li>
+              <a href="#!" class="text-dark">Ustawienia</a>
+            </li>
+            <li>
+              <a href="#!" class="text-dark">Zamówienia</a>
+            </li>
+            <li>
+              <a href="#!" class="text-dark">Pomoc</a>
+            </li>
+          </ul>
         </div>
-        <!-- Grid column -->
+        <!--Grid column-->
 
-        <!-- Grid column -->
-        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">Kontakt</h6>
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Kontakt</h5>
+
           <p><i class="fas fa-home me-3"></i> Mikołów, Poland</p>
           <p>
             <i class="fas fa-envelope me-3"></i>
@@ -278,17 +307,18 @@
           <p><i class="fas fa-phone me-3"></i> + 48 102 401 582</p>
           <p><i class="fas fa-print me-3"></i> + 32 739 23 04</p>
         </div>
-        <!-- Grid column -->
+        <!--Grid column-->
       </div>
-      <!-- Grid row -->
-    </div>
-  </section>
-  <!-- Section: Links  -->
+      <!--Grid row-->
+    </section>
+    <!-- Section: Links -->
+  </div>
+  <!-- Grid container -->
 
   <!-- Copyright -->
-  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-    © 2021 Copyright:
-    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2020 Copyright:
+    <a class="text-dark" href="https://mdbootstrap.com/">Yabro.com</a>
   </div>
   <!-- Copyright -->
 </footer>
