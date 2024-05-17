@@ -59,126 +59,220 @@
             <h1>Kobieta</h1>
         </div>
     </section>
-    <div class="grid-container-categories">
-        <div class="filter-box">
-            <ul class="list-group">
-                <h7 >ROZMIAR</h7>
-                <li class="list-group-item">
-                    <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckboxStretched">
-                    <label class="form-check-label stretched-link" for="firstCheckboxStretched">XL</label>
-                </li>
-                <li class="list-group-item">
-                    <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckboxStretched">
-                    <label class="form-check-label stretched-link" for="secondCheckboxStretched">L</label>
-                </li>
-                <li class="list-group-item">
-                    <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckboxStretched">
-                    <label class="form-check-label stretched-link" for="thirdCheckboxStretched">M</label>
-                </li>
-                <li class="list-group-item">
-                    <input class="form-check-input me-1" type="checkbox" value="" id="fourthCheckboxStretched">
-                    <label class="form-check-label stretched-link" for="fourthCheckboxStretched">S</label>
-                </li>
-            </ul>
-        </div>
-
-        <div class="product-container">
-            <div class="grid-item">
-                <img src="photo/kurtka.jpeg">
-                <p class="product-desc">KURTA NA MOTOR</p>
-                <p class="product-price">650PLN</p>
+    <div class="container mt-5">
+        <div class="d-flex justify-content-between">
+            <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Wybierz opcje 1
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <form id="multi-select-form1">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Option 1" id="option1-1">
+                            <label class="form-check-label" for="option1-1">
+                                Opcja 1
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Option 2" id="option1-2">
+                            <label class="form-check-label" for="option1-2">
+                                Opcja 2
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Option 3" id="option1-3">
+                            <label class="form-check-label" for="option1-3">
+                                Opcja 3
+                            </label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Wybierz opcje 2
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                    <form id="multi-select-form2">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Option 1" id="option2-1">
+                            <label class="form-check-label" for="option2-1">
+                                Opcja 1
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Option 2" id="option2-2">
+                            <label class="form-check-label" for="option2-2">
+                                Opcja 2
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Option 3" id="option2-3">
+                            <label class="form-check-label" for="option2-3">
+                                Opcja 3
+                            </label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Wybierz opcje 3
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+                    <form id="multi-select-form3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Option 1" id="option3-1">
+                            <label class="form-check-label" for="option3-1">
+                                Opcja 1
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Option 2" id="option3-2">
+                            <label class="form-check-label" for="option3-2">
+                                Opcja 2
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Option 3" id="option3-3">
+                            <label class="form-check-label" for="option3-3">
+                                Opcja 3
+                            </label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton4" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Wybierz opcje 4
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton4">
+                    <form id="multi-select-form4">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Option 1" id="option4-1">
+                            <label class="form-check-label" for="option4-1">
+                                Opcja 1
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Option 2" id="option4-2">
+                            <label class="form-check-label" for="option4-2">
+                                Opcja 2
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Option 3" id="option4-3">
+                            <label class="form-check-label" for="option4-3">
+                                Opcja 3
+                            </label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton5" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Wybierz opcje 5
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton5">
+                    <form id="multi-select-form5">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Option 1" id="option5-1">
+                            <label class="form-check-label" for="option5-1">
+                                Opcja 1
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Option 2" id="option5-2">
+                            <label class="form-check-label" for="option5-2">
+                                Opcja 2
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Option 3" id="option5-3">
+                            <label class="form-check-label" for="option5-3">
+                                Opcja 3
+                            </label>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
-
-        <div class="grid-item">
-            <img src="photo/plaszcz.jpeg">
-            <p class="product-desc">PłASZCZ</p>
-            <p class="product-price">500PLN</p>
+    </div>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card no-border no-border-radius">
+                    <img src="photo/kurtka.jpeg" class="card-img-top" alt="Kurtka na motor">
+                    <div class="card-body">
+                        <h5 class="card-title">KURTKA NA MOTOR</h5>
+                        <p class="card-text">650PLN</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card no-border no-border-radius">
+                    <img src="photo/plaszcz.jpeg" class="card-img-top" alt="Płaszcz">
+                    <div class="card-body">
+                        <h5 class="card-title">PŁASZCZ</h5>
+                        <p class="card-text">500PLN</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card no-border no-border-radius">
+                    <img src="photo/czapka1.jpeg" class="card-img-top" alt="Czapka">
+                    <div class="card-body">
+                        <h5 class="card-title">CZAPKA</h5>
+                        <p class="card-text">100PLN</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card no-border no-border-radius">
+                    <img src="photo/pas4.jpeg" class="card-img-top" alt="Pasek">
+                    <div class="card-body">
+                        <h5 class="card-title">PASEK</h5>
+                        <p class="card-text">200PLN</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card no-border no-border-radius">
+                    <img src="photo/kurtka.jpeg" class="card-img-top" alt="Kurtka na motor">
+                    <div class="card-body">
+                        <h5 class="card-title">KURTKA NA MOTOR</h5>
+                        <p class="card-text">650PLN</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card no-border no-border-radius">
+                    <img src="photo/plaszcz.jpeg" class="card-img-top" alt="Płaszcz">
+                    <div class="card-body">
+                        <h5 class="card-title">PŁASZCZ</h5>
+                        <p class="card-text">500PLN</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card no-border no-border-radius">
+                    <img src="photo/czapka1.jpeg" class="card-img-top" alt="Czapka">
+                    <div class="card-body">
+                        <h5 class="card-title">CZAPKA</h5>
+                        <p class="card-text">100PLN</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card no-border no-border-radius">
+                    <img src="photo/pas4.jpeg" class="card-img-top" alt="Pasek">
+                    <div class="card-body">
+                        <h5 class="card-title">PASEK</h5>
+                        <p class="card-text">200PLN</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="grid-item">
-            <img src="photo/czapk1.jpeg">
-            <p class="product-desc">CZAPKA</p>
-            <p class="product-price">100PLN</p>
-        </div>
-        <div class="grid-item">
-            <img src="photo/pas1.jpeg">
-            <p class="product-desc">PASEK</p>
-            <p class="product-price">200PLN</p>
-        </div>
-        <div></div>
-        <div></div>
-        <div class="grid-item">
-            <img src="photo/t1.jpeg">
-            <p class="product-desc">VINTAGE T-SHIRT</p>
-            <p class="product-price">80PLN</p>
-        </div>
-        <div class="grid-item">
-            <img src="photo/t2.jpeg">
-            <p class="product-desc">VINTAGE T-SHIRT</p>
-            <p class="product-price">250PLN</p>
-        </div>
-        <div class="grid-item">
-            <img src="photo/t3.jpeg">
-            <p class="product-desc">VINTAGE T-SHIRT</p>
-            <p class="product-price">200PLN</p>
-        </div>
-        <div class="grid-item">
-            <img src="photo/t4.jpeg">
-            <p class="product-desc">VINTAGE T-SHIRT</p>
-            <p class="product-price">170PLN</p>
-        </div>
-        <div></div>
-        <div></div>
-        <div class="grid-item-long">
-            <img src="photo/women.jpg" class="fit-image">
-        </div>
-        <div></div>
-        <div></div>
-        <div class="grid-item">
-            <img src="photo/t5.jpeg">
-            <p class="product-desc">VINTAGE T-SHIRT</p>
-            <p class="product-price">150PLN</p>
-        </div>
-        <div class="grid-item">
-            <img src="photo/t6.jpeg">
-            <p class="product-desc">VINTAGE T-SHIRT</p>
-            <p class="product-price">120PLN</p>
-        </div>
-        <div class="grid-item">
-            <img src="photo/t7.jpeg">
-            <p class="product-desc">VINTAGE T-SHIRT</p>
-            <p class="product-price">50PLN</p>
-        </div>
-        <div class="grid-item">
-            <img src="photo/pas1.jpeg">
-            <p class="product-desc">VINTAGE T-SHIRT</p>
-            <p class="product-price">200PLN</p>
-        </div>
-        <div></div>
-        <div></div>
-        <div class="grid-item">
-            <img src="photo/t8.jpeg">
-            <p class="product-desc">VINTAGE T-SHIRT</p>
-            <p class="product-price">180PLN</p>
-        </div>
-        <div class="grid-item">
-            <img src="photo/t9.jpeg">
-            <p class="product-desc">VINTAGE T-SHIRT</p>
-            <p class="product-price">80PLN</p>
-        </div>
-        <div class="grid-item">
-            <img src="photo/t10.jpeg">
-            <p class="product-desc">VINTAGE T-SHIRT</p>
-            <p class="product-price">100PLN</p>
-        </div>
-        <div class="grid-item">
-            <img src="photo/t11.jpeg">
-            <p class="product-desc">VINTAGE T-SHIRT</p>
-            <p class="product-price">150PLN</p>
-        </div>
-        <div></div>
-        <div></div>
-
     </div>
 
 </main>

@@ -105,14 +105,15 @@ body {
     margin-top: 10px;
 }
 .hero-section-2{
-    background: url('../photo/retromilan.jpg') no-repeat center center/cover;
+    background: url('../photo/kowno.jpg') no-repeat center center/cover;
     width: 100%;
     height: 100vh;
     position: relative;
     margin-top: 10px;
+    background-position: center 0;
 }
 .hero-section-3{
-    background: url('../photo/women2.jpg') no-repeat center center/cover;
+    background: url('../photo/rower.jpg') no-repeat center center/cover;
     width: 100%;
     height: 100vh;
     position: relative;
@@ -219,11 +220,49 @@ body {
     margin: 10px 0 0;
     font-family: Oswald, sans-serif;
 }
+.card-title{
+    font-family: Oswald, sans-serif;
+    font-size: 17px;
+}
+.card-text{
+    font-family: Oswald, sans-serif;
+    font-size: 17px;
+}
+.card{
+    margin-bottom: 50px;
+}
+.card.no-border {
+    border: none;
+    transition: border 0.3s ease-in;
+}
 
-main {
-    flex-grow: 1;
-    display: grid;
-    flex-direction: column;
+.card.no-border:hover {
+    border: 1px solid #A89989;
+}
+.dropdown{
+    margin-top: 0;
+}
+.dropdown .btn-primary {
+    background-color: #4b3621; /* ciemno brązowy */
+    border-color: #4b3621; /* ciemno brązowy */
+}
+.dropdown .btn-primary:hover, .dropdown .btn-primary:focus, .dropdown .btn-primary:active {
+    background-color: #3e2f1c; /* ciemniejszy brązowy dla hover */
+    border-color: #3e2f1c; /* ciemniejszy brązowy dla hover */
+}
+.dropdown-menu {
+    background-color: #4b3621; /* ciemno brązowy */
+}
+.dropdown-menu .form-check-label {
+    color: white; /* tekst na biało */
+}
+.dropdown-menu .btn-primary {
+    background-color: #3e2f1c; /* ciemno brązowy dla przycisku w menu */
+    border-color: #3e2f1c; /* ciemno brązowy dla przycisku w menu */
+}
+.dropdown-menu .btn-primary:hover, .dropdown-menu .btn-primary:focus, .dropdown-menu .btn-primary:active {
+    background-color: #2f2415; /* ciemniejszy brązowy dla hover w menu */
+    border-color: #2f2415; /* ciemniejszy brązowy dla hover w menu */
 }
 .grid-container{
     display: grid;
