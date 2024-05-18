@@ -87,9 +87,6 @@ body {
         width: 100%;
         visibility: visible;
     }
-    .offcanvas-buttons{
-        margin-top:10px;
-    }
 }
 .hero-section {
     background: url('../photo/mickey.jpg') no-repeat center center/cover;
@@ -269,4 +266,35 @@ body {
     background-color: #A89989;
     width: 100%;
     padding: 20px 0;
+}
+.search-container {
+    position: relative;
+}
+
+.search-form {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 250px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.search-form input {
+    flex-grow: 1;
+}
+
+.search-toggle {
+    margin-right: 10px;
+}
+.desktop-buttons{
+    margin: 0 10px;
+}
+.divider {
+    width: 1px;
+    height: 40px;
+    margin: 10px;
+    background-color: black; /* Kolor div */
 }
