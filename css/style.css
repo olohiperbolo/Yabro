@@ -69,9 +69,6 @@ body {
 }
 
 @media (min-width: 991px) {
-    .product-container{
-        width: 100%;
-    }
     .nav-link::before {
         content: "";
         position: absolute;
@@ -89,6 +86,9 @@ body {
     .nav-link.active::before {
         width: 100%;
         visibility: visible;
+    }
+    .offcanvas-buttons{
+        margin-top:10px;
     }
 }
 .hero-section {
