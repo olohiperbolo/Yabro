@@ -128,6 +128,7 @@ body {
     width: 100%;
     height: 400px;
     position: relative;
+    margin-bottom: 15px;
 }
 .hero-section-women{
     background: url('../photo/women2.jpg') no-repeat center center/cover;
@@ -274,7 +275,6 @@ body {
 .search-container {
     position: relative;
 }
-
 .search-form {
     display: none;
     position: absolute;
@@ -285,11 +285,10 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     z-index: 1000;
 }
-
 .search-form input {
     flex-grow: 1;
+    display: none;
 }
-
 .search-toggle {
     margin-right: 10px;
 }
@@ -300,5 +299,18 @@ body {
     width: 1px;
     height: 40px;
     margin: 10px;
-    background-color: black; /* Kolor div */
+    background-color: black;
+}
+.carousel-inner{
+    height: 500px;
+}
+.carousel-item img{
+    height: 500px; /* Stała wysokość obrazów */
+    min-height: 500px; /* Minimalna wysokość obrazów */
+    max-height: 500px; /* Maksymalna wysokość obrazów */
+    object-fit: cover; /* Utrzymanie proporcji */
+    width: 100%; /* Pełna szerokość */
+}
+.carousel-caption h1{
+    font-family: Oswald, sans-serif;
 }
