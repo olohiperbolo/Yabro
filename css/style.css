@@ -281,6 +281,7 @@ body {
     top: 100%;
     right: 0;
     width: 250px;
+    background-color: #A89989;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     z-index: 1000;
 }
