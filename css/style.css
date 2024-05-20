@@ -281,7 +281,6 @@ body {
     top: 100%;
     right: 0;
     width: 250px;
-    background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     z-index: 1000;
 }
@@ -312,5 +311,52 @@ body {
     width: 100%; /* Pełna szerokość */
 }
 .carousel-caption h1{
+    font-family: Oswald, sans-serif;
+}
+.modal-content {
+    padding: 20px;
+}
+.modal-header {
+    border-bottom: none;
+}
+.modal-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: Oswald, sans-serif;
+}
+.form-label {
+    font-weight: bold;
+}
+.form-control {
+    margin-bottom: 1rem;
+}
+.modal-content .btn-primary{
+    background-color: #A89989;
+    border: none;
+}
+.modal-content .btn-primary:hover {
+    background-color: #333;
+}
+.btn-outline-secondary {
+    border-color: black;
+    color: black;
+}
+.btn-outline-secondary:hover {
+    background-color: black;
+    color: white;
+}
+.forgot-password {
+    display: block;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+.forgot-password:hover {
+    text-decoration: underline;
+}
+.custom-form{
+    font-family: Oswald, sans-serif;
+}
+.modal-body p{
     font-family: Oswald, sans-serif;
 }
