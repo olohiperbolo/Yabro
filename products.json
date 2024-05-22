@@ -1,0 +1,178 @@
+[
+  {
+    "id": 1,
+    "name": "Kurtka",
+    "price": 600,
+    "image": "photo/kurtka.jpeg",
+    "category": "mezczyzna"
+  },
+  {
+    "id": 2,
+    "name": "Pasek",
+    "price": 200,
+    "image": "photo/pas1.jpeg",
+    "category": "mezczyzna"
+  },
+  {
+    "id": 3,
+    "name": "Koszulka Vintage",
+    "price": 150,
+    "image": "photo/t1.jpeg",
+    "category": "mezczyzna"
+  },
+  {
+    "id": 4,
+    "name": "Koszulka Vintage",
+    "price": 120,
+    "image": "photo/t2.jpeg",
+    "category": "mezczyzna"
+  },
+  {
+    "id": 5,
+    "name": "Koszulka Vintage",
+    "price": 150,
+    "image": "photo/t3.jpeg",
+    "category": "mezczyzna"
+  },
+  {
+    "id": 6,
+    "name": "Koszulka Vintage",
+    "price": 50,
+    "image": "photo/t13.jpeg",
+    "category": "mezczyzna"
+  },
+  {
+    "id": 7,
+    "name": "Koszulka Vintage",
+    "price": 180,
+    "image": "photo/t14.jpeg",
+    "category": "kobieta"
+  },
+  {
+    "id": 8,
+    "name": "Koszulka Vintage",
+    "price": 200,
+    "image": "photo/t15.jpeg",
+    "category": "kobieta"
+  },
+  {
+    "id": 9,
+    "name": "Koszulka Vintage",
+    "price": 150,
+    "image": "photo/t16.jpeg",
+    "category": "kobieta"
+
+  },
+  {
+    "id": 10,
+    "name": "Koszulka Vintage",
+    "price": 100,
+    "image": "photo/tb4.jpeg",
+    "category": "kobieta"
+  },
+  {
+    "id": 11,
+    "name": "Koszulka Vintage",
+    "price": 100,
+    "image": "photo/tb3.jpeg",
+    "category": "kobieta"
+  },
+  {
+    "id": 12,
+    "name": "Koszulka Vintage",
+    "price": 100,
+    "image": "photo/tb2.jpeg",
+    "category": "kobieta"
+  },
+  {
+    "id": 13,
+    "name": "Koszulka Vintage",
+    "price": 100,
+    "image": "photo/tb1.jpeg",
+    "category": "kobieta"
+  },
+  {
+    "id": 14,
+    "name": "Koszulka Vintage",
+    "price": 220,
+    "image": "photo/t1.jpeg",
+    "category": "sport"
+  },
+  {
+    "id": 15,
+    "name": "Polo Vintage",
+    "price": 200,
+    "image": "photo/t2.jpeg",
+    "category": "sport"
+  },
+  {
+    "id": 16,
+    "name": "Bluzka Vintage",
+    "price": 100,
+    "image": "photo/tb1.jpeg",
+    "category": "sport"
+  },
+  {
+    "id": 17,
+    "name": "Bluzka Vintage",
+    "price": 150,
+    "image": "photo/tb2.jpeg",
+    "category": "sport"
+  },
+  {
+    "id": 18,
+    "name": "Bluzka Vintage",
+    "price": 250,
+    "image": "photo/tb3.jpeg",
+    "category": "sport"
+  },
+  {
+    "id": 19,
+    "name": "Bluzka Vintage",
+    "price": 300,
+    "image": "photo/tb4.jpeg",
+    "category": "sport"
+  },
+  {
+    "id": 20,
+    "name": "Pasek",
+    "price": 200,
+    "image": "photo/pas2.jpeg",
+    "category": "akcesoria"
+  },
+  {
+    "id": 21,
+    "name": "Pasek",
+    "price": 150,
+    "image": "photo/pas3.jpeg",
+    "category": "akcesoria"
+  },
+  {
+    "id": 22,
+    "name": "Pasek",
+    "price": 200,
+    "image": "photo/pas4.jpeg",
+    "category": "akcesoria"
+  },
+  {
+    "id": 23,
+    "name": "Pasek",
+    "price": 50,
+    "image": "photo/pas1.jpeg",
+    "category": "akcesoria"
+  },
+  {
+    "id": 24,
+    "name": "Czapka",
+    "price": 100,
+    "image": "photo/czapka1.jpeg",
+    "category": "akcesoria"
+  },
+  {
+    "id": 25,
+    "name": "Czapka",
+    "price": 100,
+    "image": "photo/czapk1.jpeg",
+    "category": "akcesoria"
+  }
+]
