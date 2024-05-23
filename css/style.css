@@ -232,7 +232,6 @@ body {
     border: none;
     transition: border 0.3s ease-in;
 }
-
 .card.no-border:hover {
     border: 1px solid #A89989;
 }

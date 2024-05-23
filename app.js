@@ -1,16 +1,16 @@
-document.addEventListener('DOMContentLoaded', (event) => {
+document.addEventListener('DOMContentLoaded', () => {
     const joinButton = document.querySelector('#accountModal .btn-outline-secondary');
 
-    joinButton.addEventListener('click', () => {
-        const accountModal = new bootstrap.Modal(document.getElementById('accountModal'));
-        const registerModal = new bootstrap.Modal(document.getElementById('registerModal'));
+    if (joinButton) {
+        joinButton.addEventListener('click', () => {
+            const accountModal = new bootstrap.Modal(document.getElementById('accountModal'));
+            const registerModal = new bootstrap.Modal(document.getElementById('registerModal'));
 
-        accountModal.hide();
-        registerModal.show();
-    });
-});
+            accountModal.hide();
+            registerModal.show();
+        });
+    }
 
-document.addEventListener('DOMContentLoaded', () => {
     const sections = {
         kobieta: document.getElementById('kobieta'),
         mezczyzna: document.getElementById('mezczyzna'),
@@ -35,10 +35,10 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div class="card-body">
                         <h5 class="card-title">${product.name}</h5>
                         <p class="card-text">${product.price} PLN</p>
-                        <button class="addCart" data-id="${product.id}" data-name="${product.name}" data-price="${product.price}" data-image="${product.image}">
+                        <button class="addCart btn btn-outline-secondary" data-id="${product.id}" data-name="${product.name}" data-price="${product.price}" data-image="${product.image}">
                             <i class="fas fa-shopping-cart"></i>
                         </button>
-                        <button class="addFavorite" data-id="${product.id}" data-name="${product.name}" data-price="${product.price}" data-image="${product.image}">
+                        <button class="addFavorite btn btn-outline-secondary" data-id="${product.id}" data-name="${product.name}" data-price="${product.price}" data-image="${product.image}">
                             <i class="fas fa-heart"></i>
                         </button>
                     </div>
@@ -61,10 +61,10 @@ document.addEventListener('DOMContentLoaded', () => {
         addCartButtons.forEach(button => {
             button.addEventListener('click', (event) => {
                 const product = {
-                    id: event.target.getAttribute('data-id'),
-                    name: event.target.getAttribute('data-name'),
-                    price: parseFloat(event.target.getAttribute('data-price')),
-                    image: event.target.getAttribute('data-image')
+                    id: event.currentTarget.getAttribute('data-id'),
+                    name: event.currentTarget.getAttribute('data-name'),
+                    price: parseFloat(event.currentTarget.getAttribute('data-price')),
+                    image: event.currentTarget.getAttribute('data-image')
                 };
 
                 if (product.id && product.name && !isNaN(product.price) && product.image) {
@@ -82,10 +82,10 @@ document.addEventListener('DOMContentLoaded', () => {
         addFavoriteButtons.forEach(button => {
             button.addEventListener('click', (event) => {
                 const product = {
-                    id: event.target.getAttribute('data-id'),
-                    name: event.target.getAttribute('data-name'),
-                    price: parseFloat(event.target.getAttribute('data-price')),
-                    image: event.target.getAttribute('data-image')
+                    id: event.currentTarget.getAttribute('data-id'),
+                    name: event.currentTarget.getAttribute('data-name'),
+                    price: parseFloat(event.currentTarget.getAttribute('data-price')),
+                    image: event.currentTarget.getAttribute('data-image')
                 };
 
                 if (product.id && product.name && !isNaN(product.price) && product.image) {
@@ -105,6 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
             alert('Ten produkt jest już w koszyku');
         } else {
             cart.push(product);
+            console.log('Dodano do koszyka:', product);
             localStorage.setItem('cart', JSON.stringify(cart));
             alert('Produkt dodany do koszyka');
             displayCartItems();
@@ -119,6 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
             alert('Ten produkt jest już w ulubionych');
         } else {
             favorites.push(product);
+            console.log('Dodano do ulubionych:', product);
             localStorage.setItem('favorites', JSON.stringify(favorites));
             alert('Produkt dodany do ulubionych');
             displayFavouriteItems();
@@ -156,7 +158,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         removeButtons.forEach(button => {
             button.addEventListener('click', (event) => {
-                const productId = event.target.getAttribute('data-id');
+                const productId = event.currentTarget.getAttribute('data-id');
                 removeFromCart(productId);
                 displayCartItems();
             });
@@ -176,11 +178,10 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('total-price').textContent = totalPrice.toFixed(2);
     };
 
-    displayCartItems();
-
     const displayFavouriteItems = () => {
         const favouriteItemsContainer = document.getElementById('favouriteItems');
         const favourites = JSON.parse(localStorage.getItem('favorites')) || [];
+        console.log('Ulubione produkty:', favourites);
 
         // Clear the container
         favouriteItemsContainer.innerHTML = '';
@@ -202,5 +203,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
 
+    // Wywołanie funkcji podczas ładowania strony
+    displayCartItems();
     displayFavouriteItems();
 });
