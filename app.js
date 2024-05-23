@@ -36,10 +36,10 @@ document.addEventListener('DOMContentLoaded', () => {
                         <h5 class="card-title">${product.name}</h5>
                         <p class="card-text">${product.price} PLN</p>
                         <button class="addCart" data-id="${product.id}" data-name="${product.name}" data-price="${product.price}" data-image="${product.image}">
-                            Add To Cart
+                            <i class="fas fa-shopping-cart"></i>
                         </button>
                         <button class="addFavorite" data-id="${product.id}" data-name="${product.name}" data-price="${product.price}" data-image="${product.image}">
-                            Add To Favorites
+                            <i class="fas fa-heart"></i>
                         </button>
                     </div>
                 </div>

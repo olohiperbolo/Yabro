@@ -373,7 +373,7 @@ body {
 .addCart:hover{
     background-color: darkgray;
 }
-.addToFavorites{
+.addFavorite{
     background-color: #A89989;
     padding: 10px 20px;
     color: black;
@@ -383,7 +383,7 @@ body {
     transition: background-color 0.3s ease;
     font-family: Oswald, sans-serif;
 }
-.addToFavorites:hover{
+.addFavorite:hover{
     background-color: darkgray;
 }
 .product {
