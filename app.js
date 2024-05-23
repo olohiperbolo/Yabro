@@ -51,11 +51,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 const product = {
                     id: event.target.getAttribute('data-id'),
                     name: event.target.getAttribute('data-name'),
-                    price: event.target.getAttribute('data-price'),
+                    price: parseFloat(event.target.getAttribute('data-price')),
                     image: event.target.getAttribute('data-image')
                 };
 
-                addToCart(product);
+                if (product.id && product.name && !isNaN(product.price) && product.image) {
+                    addToCart(product);
+                } else {
+                    console.error('Invalid product data:', product);
+                }
             });
         });
     };
@@ -68,27 +72,44 @@ document.addEventListener('DOMContentLoaded', () => {
                 const product = {
                     id: event.target.getAttribute('data-id'),
                     name: event.target.getAttribute('data-name'),
-                    price: event.target.getAttribute('data-price'),
+                    price: parseFloat(event.target.getAttribute('data-price')),
                     image: event.target.getAttribute('data-image')
                 };
 
-                addToFavorites(product);
+                if (product.id && product.name && !isNaN(product.price) && product.image) {
+                    addToFavorites(product);
+                } else {
+                    console.error('Invalid product data:', product);
+                }
             });
         });
     };
 
     const addToCart = (product) => {
         let cart = JSON.parse(localStorage.getItem('cart')) || [];
-        cart.push(product);
-        localStorage.setItem('cart', JSON.stringify(cart));
-        alert('Produkt dodany do koszyka');
+        const productExists = cart.some(item => item.id === product.id);
+
+        if (productExists) {
+            alert('Ten produkt jest już w koszyku');
+        } else {
+            cart.push(product);
+            localStorage.setItem('cart', JSON.stringify(cart));
+            alert('Produkt dodany do koszyka');
+            displayCartItems();
+        }
     };
 
     const addToFavorites = (product) => {
         let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
-        favorites.push(product);
-        localStorage.setItem('favorites', JSON.stringify(favorites));
-        alert('Produkt dodany do ulubionych');
+        const favoriteExists = favorites.some(item => item.id === product.id);
+
+        if (favoriteExists) {
+            alert('Ten produkt jest już w ulubionych');
+        } else {
+            favorites.push(product);
+            localStorage.setItem('favorites', JSON.stringify(favorites));
+            alert('Produkt dodany do ulubionych');
+        }
     };
 
     const displayCartItems = () => {
@@ -100,19 +121,46 @@ document.addEventListener('DOMContentLoaded', () => {
 
         cart.forEach(product => {
             let newCartItem = document.createElement('div');
-            newCartItem.classList.add('col-md-3');
+            newCartItem.classList.add('cart-item');
             newCartItem.innerHTML = `
-            <div class="card no-border no-border-radius">
-                <img src="${product.image}" class="card-img-top" alt="${product.name}">
-                <div class="card-body">
-                    <h5 class="card-title">${product.name}</h5>
-                    <p class="card-text">${product.price} PLN</p>
+                <img src="${product.image}" alt="${product.name}">
+                <div class="cart-item-info">
+                    <h5>${product.name}</h5>
+                    <p>${product.price} PLN</p>
                 </div>
-            </div>
-        `;
+                <button class="remove-btn" data-id="${product.id}">Usuń</button>
+            `;
 
             cartItemsContainer.appendChild(newCartItem);
         });
+
+        setupRemoveButtons();
+        updateTotalPrice();
+    };
+
+    const setupRemoveButtons = () => {
+        const removeButtons = document.querySelectorAll('.remove-btn');
+
+        removeButtons.forEach(button => {
+            button.addEventListener('click', (event) => {
+                const productId = event.target.getAttribute('data-id');
+                removeFromCart(productId);
+                displayCartItems();
+            });
+        });
+    };
+
+    const removeFromCart = (productId) => {
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        cart = cart.filter(product => product.id !== productId);
+        localStorage.setItem('cart', JSON.stringify(cart));
+        updateTotalPrice();
+    };
+
+    const updateTotalPrice = () => {
+        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+        const totalPrice = cart.reduce((sum, product) => sum + product.price, 0);
+        document.getElementById('total-price').textContent = totalPrice.toFixed(2);
     };
 
     displayCartItems();

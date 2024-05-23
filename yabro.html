@@ -302,26 +302,7 @@
     <!-- Copyright -->
 </footer>
 <script src="app.js"></script>
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const searchToggle = document.querySelector('.search-toggle');
-        const searchForm = document.querySelector('.search-form');
 
-        searchToggle.addEventListener('click', function () {
-            if (searchForm.style.display === 'flex') {
-                searchForm.style.display = 'none';
-            } else {
-                searchForm.style.display = 'flex';
-            }
-        });
-
-        document.addEventListener('click', function (event) {
-            if (!searchForm.contains(event.target) && !searchToggle.contains(event.target)) {
-                searchForm.style.display = 'none';
-            }
-        });
-    });
-</script>
 <script>
     document.addEventListener('DOMContentLoaded', (event) => {
         const joinButton = document.querySelector('#accountModal .btn-outline-secondary');
