@@ -413,12 +413,13 @@ body {
     flex: 1;
 }
 .cart-item .remove-btn {
-    background-color: #ff0000;
+    font-family: Oswald, sans-serif;
+    background-color: firebrick;
     color: #ffffff;
     border: none;
     padding: 5px 10px;
     cursor: pointer;
-    border-radius: 20px;
+    border-radius: 5px;
 }
 .total-price h3{
     font-family: Oswald, sans-serif;

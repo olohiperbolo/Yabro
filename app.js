@@ -1,3 +1,15 @@
+document.addEventListener('DOMContentLoaded', (event) => {
+    const joinButton = document.querySelector('#accountModal .btn-outline-secondary');
+
+    joinButton.addEventListener('click', () => {
+        const accountModal = new bootstrap.Modal(document.getElementById('accountModal'));
+        const registerModal = new bootstrap.Modal(document.getElementById('registerModal'));
+
+        accountModal.hide();
+        registerModal.show();
+    });
+});
+
 document.addEventListener('DOMContentLoaded', () => {
     const sections = {
         kobieta: document.getElementById('kobieta'),
@@ -109,6 +121,7 @@ document.addEventListener('DOMContentLoaded', () => {
             favorites.push(product);
             localStorage.setItem('favorites', JSON.stringify(favorites));
             alert('Produkt dodany do ulubionych');
+            displayFavouriteItems();
         }
     };
 
@@ -176,14 +189,14 @@ document.addEventListener('DOMContentLoaded', () => {
             let newFavouriteItem = document.createElement('div');
             newFavouriteItem.classList.add('col-md-3');
             newFavouriteItem.innerHTML = `
-            <div class="card no-border no-border-radius">
-                <img src="${product.image}" class="card-img-top" alt="${product.name}">
-                <div class="card-body">
-                    <h5 class="card-title">${product.name}</h5>
-                    <p class="card-text">${product.price} PLN</p>
+                <div class="card no-border no-border-radius">
+                    <img src="${product.image}" class="card-img-top" alt="${product.name}">
+                    <div class="card-body">
+                        <h5 class="card-title">${product.name}</h5>
+                        <p class="card-text">${product.price} PLN</p>
+                    </div>
                 </div>
-            </div>
-        `;
+            `;
 
             favouriteItemsContainer.appendChild(newFavouriteItem);
         });

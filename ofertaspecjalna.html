@@ -405,16 +405,5 @@
     });
 </script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRrYenQ6l5N5XbV1Njt4e34bcWRPScGJGVFQRyFSq" crossorigin="anonymous"></script>
-<script>
-    $(document).ready(function() {
-        $('#applyButton').click(function() {
-            var selectedOptions = [];
-            $('#multi-select-form input:checked').each(function() {
-                selectedOptions.push($(this).val());
-            });
-            alert('Wybrane opcje: ' + selectedOptions.join(', '));
-        });
-    });
-</script>
 </body>
 </html>
