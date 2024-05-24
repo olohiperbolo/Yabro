@@ -30,6 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
             let newProduct = document.createElement('div');
             newProduct.classList.add('col-md-3');
             newProduct.innerHTML = `
+            <a href="produkt.html"> <!-- Dodany link -->
                 <div class="card no-border no-border-radius">
                     <img src="${product.image}" class="card-img-top" alt="${product.name}">
                     <div class="card-body">
@@ -43,7 +44,8 @@ document.addEventListener('DOMContentLoaded', () => {
                         </button>
                     </div>
                 </div>
-            `;
+            </a> <!-- Zamknięcie linku -->
+        `;
 
             const section = sections[product.category];
             if (section) {
