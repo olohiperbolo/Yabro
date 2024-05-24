@@ -30,8 +30,8 @@ document.addEventListener('DOMContentLoaded', () => {
             let newProduct = document.createElement('div');
             newProduct.classList.add('col-md-3');
             newProduct.innerHTML = `
-            <a href="produkt.html"> <!-- Dodany link -->
-                <div class="card no-border no-border-radius">
+            <div class="card no-border no-border-radius">
+                <a href="produkt.html" target="_blank" style="text-decoration: none; color: black">
                     <img src="${product.image}" class="card-img-top" alt="${product.name}">
                     <div class="card-body">
                         <h5 class="card-title">${product.name}</h5>
@@ -43,8 +43,8 @@ document.addEventListener('DOMContentLoaded', () => {
                             <i class="fas fa-heart"></i>
                         </button>
                     </div>
-                </div>
-            </a> <!-- Zamknięcie linku -->
+                </a> <!-- Zamknięcie linku -->
+            </div>
         `;
 
             const section = sections[product.category];
