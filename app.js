@@ -67,6 +67,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         addCartButtons.forEach(button => {
             button.addEventListener('click', (event) => {
+                event.preventDefault();
+                event.stopPropagation();
+
                 const product = {
                     id: event.currentTarget.getAttribute('data-id'),
                     name: event.currentTarget.getAttribute('data-name'),
@@ -89,6 +92,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         addFavoriteButtons.forEach(button => {
             button.addEventListener('click', (event) => {
+                event.preventDefault();
+                event.stopPropagation();
+
                 const product = {
                     id: event.currentTarget.getAttribute('data-id'),
                     name: event.currentTarget.getAttribute('data-name'),
@@ -256,4 +262,3 @@ document.addEventListener('DOMContentLoaded', function() {
             });
     }
 });
-
