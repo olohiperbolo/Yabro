@@ -179,7 +179,7 @@
     "id": 26,
     "name": "Vintage T-shirt",
     "price": 120,
-    "images": ["photo/osaka1.jpeg","photo/osaka2.jpeg"],
+    "images": ["photo/osaka1.jpeg","photo/osaka2.jpeg","photo/osaka3.jpeg","photo/osaka4.jpeg","photo/osaka5/jpeg"],
     "category": "mezczyzna"
   }
 ]
