@@ -212,7 +212,7 @@
     "id": 27,
     "name": "Bluza Służbowa",
     "price": 120,
-    "images": ["photo/bluzaS1.jpeg","photo/bluzaS2.jpeg","photo/bluzaS3.jpeg","photo/bluzaS4.jpeg","photo/bluzaS5.jpeg","photo/bluzaS6.jpeg","photo/bluzaS7.jpeg"],
+    "images": ["photo/bluzaS2.jpeg","photo/bluzaS1.jpeg","photo/bluzaS3.jpeg","photo/bluzaS4.jpeg","photo/bluzaS5.jpeg","photo/bluzaS6.jpeg","photo/bluzaS7.jpeg"],
     "category": "mezczyzna",
     "product-description": "Super mega ekstra drill"
   },
