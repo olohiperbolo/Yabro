@@ -4,63 +4,72 @@
     "name": "Kurtka",
     "price": 600,
     "images": ["photo/osaka1.jpeg","photo/osaka2.jpeg"],
-    "category": "mezczyzna"
+    "category": "mezczyzna",
+    "product-description": "Super mega ekstra drill"
   },
   {
     "id": 2,
     "name": "Pasek",
     "price": 200,
     "images": ["photo/osaka1.jpeg","photo/osaka2.jpeg"],
-    "category": "mezczyzna"
+    "category": "mezczyzna",
+    "product-description": "Super mega ekstra drill"
   },
   {
     "id": 3,
     "name": "Koszulka Vintage",
     "price": 150,
     "images": ["photo/osaka1.jpeg","photo/osaka2.jpeg"],
-    "category": "mezczyzna"
+    "category": "mezczyzna",
+    "product-description": "Super mega ekstra drill"
   },
   {
     "id": 4,
     "name": "Koszulka Vintage",
     "price": 120,
     "images": ["photo/osaka1.jpeg","photo/osaka2.jpeg"],
-    "category": "mezczyzna"
+    "category": "mezczyzna",
+    "product-description": "Super mega ekstra drill"
   },
   {
     "id": 5,
     "name": "Koszulka Vintage",
     "price": 150,
     "images": ["photo/osaka1.jpeg","photo/osaka2.jpeg"],
-    "category": "mezczyzna"
+    "category": "mezczyzna",
+    "product-description": "Super mega ekstra drill"
   },
   {
     "id": 6,
     "name": "Koszulka Vintage",
     "price": 50,
     "images": ["photo/osaka1.jpeg","photo/osaka2.jpeg"],
-    "category": "mezczyzna"
+    "category": "mezczyzna",
+    "product-description": "Super mega ekstra drill"
   },
   {
     "id": 7,
     "name": "Koszulka Vintage",
     "price": 180,
     "images": ["photo/osaka1.jpeg","photo/osaka2.jpeg"],
-    "category": "kobieta"
+    "category": "kobieta",
+    "product-description": "Super mega ekstra drill"
   },
   {
     "id": 8,
     "name": "Koszulka Vintage",
     "price": 200,
     "images": ["photo/osaka1.jpeg","photo/osaka2.jpeg"],
-    "category": "kobieta"
+    "category": "kobieta",
+    "product-description": "Super mega ekstra drill"
   },
   {
     "id": 9,
     "name": "Koszulka Vintage",
     "price": 150,
     "images": ["photo/osaka1.jpeg","photo/osaka2.jpeg"],
-    "category": "kobieta"
+    "category": "kobieta",
+    "product-description": "Super mega ekstra drill"
 
   },
   {
@@ -68,118 +77,158 @@
     "name": "Koszulka Vintage",
     "price": 100,
     "images": ["photo/osaka1.jpeg","photo/osaka2.jpeg"],
-    "category": "kobieta"
+    "category": "kobieta",
+    "product-description": "Super mega ekstra drill"
   },
   {
     "id": 11,
     "name": "Koszulka Vintage",
     "price": 100,
     "images": ["photo/osaka1.jpeg","photo/osaka2.jpeg"],
-    "category": "kobieta"
+    "category": "kobieta",
+    "product-description": "Super mega ekstra drill"
   },
   {
     "id": 12,
     "name": "Koszulka Vintage",
     "price": 100,
     "images": ["photo/osaka1.jpeg","photo/osaka2.jpeg"],
-    "category": "kobieta"
+    "category": "kobieta",
+    "product-description": "Super mega ekstra drill"
   },
   {
     "id": 13,
     "name": "Koszulka Vintage",
     "price": 100,
     "images": ["photo/osaka1.jpeg","photo/osaka2.jpeg"],
-    "category": "kobieta"
+    "category": "kobieta",
+    "product-description": "Super mega ekstra drill"
   },
   {
     "id": 14,
     "name": "Koszulka Vintage",
     "price": 220,
     "images": ["photo/osaka1.jpeg","photo/osaka2.jpeg"],
-    "category": "sport"
+    "category": "sport",
+    "product-description": "Super mega ekstra drill"
   },
   {
     "id": 15,
     "name": "Polo Vintage",
     "price": 200,
     "images": ["photo/osaka1.jpeg","photo/osaka2.jpeg"],
-    "category": "sport"
+    "category": "sport",
+    "product-description": "Super mega ekstra drill"
   },
   {
     "id": 16,
     "name": "Bluzka Vintage",
     "price": 100,
     "images": ["photo/osaka1.jpeg","photo/osaka2.jpeg"],
-    "category": "sport"
+    "category": "sport",
+    "product-description": "Super mega ekstra drill"
   },
   {
     "id": 17,
     "name": "Bluzka Vintage",
     "price": 150,
     "images": ["photo/osaka1.jpeg","photo/osaka2.jpeg"],
-    "category": "sport"
+    "category": "sport",
+    "product-description": "Super mega ekstra drill"
   },
   {
     "id": 18,
     "name": "Bluzka Vintage",
     "price": 250,
     "images": ["photo/osaka1.jpeg","photo/osaka2.jpeg"],
-    "category": "sport"
+    "category": "sport",
+    "product-description": "Super mega ekstra drill"
   },
   {
     "id": 19,
     "name": "Bluzka Vintage",
     "price": 300,
     "images": ["photo/osaka1.jpeg","photo/osaka2.jpeg"],
-    "category": "sport"
+    "category": "sport",
+    "product-description": "Super mega ekstra drill"
   },
   {
     "id": 20,
     "name": "Pasek",
     "price": 200,
     "images": ["photo/osaka1.jpeg","photo/osaka2.jpeg"],
-    "category": "akcesoria"
+    "category": "akcesoria",
+    "product-description": "Super mega ekstra drill"
   },
   {
     "id": 21,
     "name": "Pasek",
     "price": 150,
     "images": ["photo/osaka1.jpeg","photo/osaka2.jpeg"],
-    "category": "akcesoria"
+    "category": "akcesoria",
+    "product-description": "Super mega ekstra drill"
   },
   {
     "id": 22,
     "name": "Pasek",
     "price": 200,
     "images": ["photo/osaka1.jpeg","photo/osaka2.jpeg"],
-    "category": "akcesoria"
+    "category": "akcesoria",
+    "product-description": "Super mega ekstra drill"
   },
   {
     "id": 23,
     "name": "Pasek",
     "price": 50,
     "images": ["photo/osaka1.jpeg","photo/osaka2.jpeg"],
-    "category": "akcesoria"
+    "category": "akcesoria",
+    "product-description": "Super mega ekstra drill"
   },
   {
     "id": 24,
     "name": "Czapka",
     "price": 100,
     "images": ["photo/osaka1.jpeg","photo/osaka2.jpeg"],
-    "category": "akcesoria"
+    "category": "akcesoria",
+    "product-description": "Super mega ekstra drill"
   },
   {
     "id": 25,
     "name": "Czapka",
     "price": 100,
     "images": ["photo/osaka1.jpeg","photo/osaka2.jpeg"],
-    "category": "akcesoria"
+    "category": "akcesoria",
+    "product-description": "Super mega ekstra drill"
   },
   {
     "id": 26,
     "name": "Vintage T-shirt",
     "price": 120,
-    "images": ["photo/osaka1.jpeg","photo/osaka2.jpeg","photo/osaka3.jpeg","photo/osaka4.jpeg","photo/osaka5/jpeg"],
+    "images": ["photo/osaka1.jpeg","photo/osaka2.jpeg","photo/osaka3.jpeg","photo/osaka4.jpeg","photo/osaka5.jpeg"],
+    "category": "mezczyzna",
+    "product-description": "Super mega ekstra drill"
+  },
+  {
+    "id": 27,
+    "name": "Bluza Służbowa",
+    "price": 120,
+    "images": ["photo/bluzaS1.jpeg","photo/bluzaS2.jpeg","photo/bluzaS3.jpeg","photo/bluzaS4.jpeg","photo/bluzaS5.jpeg","photo/bluzaS6.jpeg","photo/bluzaS7.jpeg"],
+    "category": "mezczyzna",
+    "product-description": "Super mega ekstra drill"
+  },
+  {
+    "id": 28,
+    "name": "Spodnie Levis",
+    "price": 120,
+    "images": ["photo/levis1.jpeg","photo/levis2.jpeg","photo/levis2.jpeg","photo/levis3.jpeg","photo/levis4.jpeg","photo/levis5.jpeg","photo/levis6.jpeg"],
     "category": "mezczyzna"
+  },
+  {
+    "id": 29,
+    "name": "Kurtka angielska",
+    "price": 120,
+    "images": ["photo/eng1.jpeg","photo/eng2.jpeg","photo/eng3.jpeg","photo/eng4.jpeg","photo/eng5.jpeg","photo/eng6.jpeg"],
+    "category": "mezczyzna",
+    "product-description": "Super mega ekstra drill"
   }
 ]

@@ -71,19 +71,35 @@
         </button>
     </div>
 </nav>
+
 <main>
-    <div id="carouselExample" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner" id="carousel-inner">
-            <!-- Obrazy będą tutaj wstawiane dynamicznie -->
+    <div class="container mt-5">
+        <div class="product-container">
+            <div id="productCarousel" class="carousel slide product-carousel" data-bs-ride="carousel">
+                <div class="carousel-inner" id="carousel-inner">
+                    <!-- Obrazy będą tutaj wstawiane dynamicznie -->
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class="product-details">
+                <h1 class="product-title" id="product-title">Product Name</h1>
+                <h2 class="product-price" id="product-price">$75</h2>
+                <div class="product-actions mt-3">
+                    <button class="btn btn-primary" id="addToCart">Add to Cart</button>
+                    <button class="btn btn-secondary" id="addToFavorites">Add to Favorites</button>
+                </div>
+                <div class="product-description mt-3" id="product-description">
+                    <!-- opisy będą tutaj wstawiane dynamicznie -->
+                </div>
+            </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Poprzedni</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Następny</span>
-        </a>
     </div>
 </main>
 
@@ -230,6 +246,7 @@
     <!-- Copyright -->
 </footer>
 <script src="app.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>

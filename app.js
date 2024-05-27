@@ -254,11 +254,49 @@ document.addEventListener('DOMContentLoaded', function() {
                     });
 
                     // Re-inicjalizacja karuzeli po dodaniu nowych elementów
-                    $('.carousel').carousel();
+                    $('#productCarousel').carousel();
+
+                    // Aktualizacja danych produktu
+                    document.getElementById('product-title').textContent = product.name;
+                    document.getElementById('product-price').textContent = `${product.price} PLN`;
+                    document.getElementById('product-description').innerHTML = `
+                        <p>${product['product-description'] || 'Brak opisu produktu.'}</p>
+                    `;
+
+                    // Obsługa przycisków dodawania do koszyka i ulubionych
+                    document.getElementById('addToCart').addEventListener('click', () => {
+                        addToCart(product);
+                    });
+                    document.getElementById('addToFavorites').addEventListener('click', () => {
+                        addToFavorites(product);
+                    });
                 }
             })
             .catch(error => {
                 console.error('Error fetching product data:', error);
             });
     }
+
+    // Funkcje dodawania do koszyka i ulubionych
+    const addToCart = (product) => {
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        if (!cart.some(item => item.id === product.id)) {
+            cart.push(product);
+            localStorage.setItem('cart', JSON.stringify(cart));
+            alert('Product added to cart');
+        } else {
+            alert('Product already in cart');
+        }
+    };
+
+    const addToFavorites = (product) => {
+        let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+        if (!favorites.some(item => item.id === product.id)) {
+            favorites.push(product);
+            localStorage.setItem('favorites', JSON.stringify(favorites));
+            alert('Product added to favorites');
+        } else {
+            alert('Product already in favorites');
+        }
+    };
 });
