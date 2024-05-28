@@ -5,7 +5,11 @@
     "price": 600,
     "images": ["photo/osaka1.jpeg","photo/osaka2.jpeg"],
     "category": "mezczyzna",
-    "product-description": "Super mega ekstra drill"
+    "product-description": "Super mega ekstra drill",
+    "size": "L",
+    "color": "Czarny",
+    "brand": "Adidas",
+    "condition": "Nowy"
   },
   {
     "id": 2,
@@ -13,7 +17,11 @@
     "price": 200,
     "images": ["photo/osaka1.jpeg","photo/osaka2.jpeg"],
     "category": "mezczyzna",
-    "product-description": "Super mega ekstra drill"
+    "product-description": "Super mega ekstra drill",
+    "size": "M",
+    "color": "Brązowy",
+    "brand": "Nike",
+    "condition": "Używany"
   },
   {
     "id": 3,
@@ -21,7 +29,11 @@
     "price": 150,
     "images": ["photo/osaka1.jpeg","photo/osaka2.jpeg"],
     "category": "mezczyzna",
-    "product-description": "Super mega ekstra drill"
+    "product-description": "Super mega ekstra drill",
+    "size": "S",
+    "color": "Biały",
+    "brand": "Puma",
+    "condition": "Nowy"
   },
   {
     "id": 4,
@@ -29,7 +41,11 @@
     "price": 120,
     "images": ["photo/osaka1.jpeg","photo/osaka2.jpeg"],
     "category": "mezczyzna",
-    "product-description": "Super mega ekstra drill"
+    "product-description": "Super mega ekstra drill",
+    "size": "M",
+    "color": "Niebieski",
+    "brand": "Reebok",
+    "condition": "Używany"
   },
   {
     "id": 5,
@@ -37,7 +53,11 @@
     "price": 150,
     "images": ["photo/osaka1.jpeg","photo/osaka2.jpeg"],
     "category": "mezczyzna",
-    "product-description": "Super mega ekstra drill"
+    "product-description": "Super mega ekstra drill",
+    "size": "XL",
+    "color": "Czerwony",
+    "brand": "Adidas",
+    "condition": "Nowy"
   },
   {
     "id": 6,
@@ -45,7 +65,11 @@
     "price": 50,
     "images": ["photo/osaka1.jpeg","photo/osaka2.jpeg"],
     "category": "mezczyzna",
-    "product-description": "Super mega ekstra drill"
+    "product-description": "Super mega ekstra drill",
+    "size": "L",
+    "color": "Zielony",
+    "brand": "Nike",
+    "condition": "Używany"
   },
   {
     "id": 7,
@@ -53,7 +77,11 @@
     "price": 180,
     "images": ["photo/osaka1.jpeg","photo/osaka2.jpeg"],
     "category": "kobieta",
-    "product-description": "Super mega ekstra drill"
+    "product-description": "Super mega ekstra drill",
+    "size": "M",
+    "color": "Różowy",
+    "brand": "Puma",
+    "condition": "Nowy"
   },
   {
     "id": 8,
@@ -61,7 +89,11 @@
     "price": 200,
     "images": ["photo/osaka1.jpeg","photo/osaka2.jpeg"],
     "category": "kobieta",
-    "product-description": "Super mega ekstra drill"
+    "product-description": "Super mega ekstra drill",
+    "size": "S",
+    "color": "Biały",
+    "brand": "Reebok",
+    "condition": "Używany"
   },
   {
     "id": 9,
@@ -69,8 +101,11 @@
     "price": 150,
     "images": ["photo/osaka1.jpeg","photo/osaka2.jpeg"],
     "category": "kobieta",
-    "product-description": "Super mega ekstra drill"
-
+    "product-description": "Super mega ekstra drill",
+    "size": "L",
+    "color": "Fioletowy",
+    "brand": "Adidas",
+    "condition": "Nowy"
   },
   {
     "id": 10,
@@ -78,7 +113,11 @@
     "price": 100,
     "images": ["photo/osaka1.jpeg","photo/osaka2.jpeg"],
     "category": "kobieta",
-    "product-description": "Super mega ekstra drill"
+    "product-description": "Super mega ekstra drill",
+    "size": "XL",
+    "color": "Czarny",
+    "brand": "Nike",
+    "condition": "Używany"
   },
   {
     "id": 11,
@@ -86,7 +125,11 @@
     "price": 100,
     "images": ["photo/osaka1.jpeg","photo/osaka2.jpeg"],
     "category": "kobieta",
-    "product-description": "Super mega ekstra drill"
+    "product-description": "Super mega ekstra drill",
+    "size": "M",
+    "color": "Żółty",
+    "brand": "Puma",
+    "condition": "Nowy"
   },
   {
     "id": 12,
@@ -94,7 +137,11 @@
     "price": 100,
     "images": ["photo/osaka1.jpeg","photo/osaka2.jpeg"],
     "category": "kobieta",
-    "product-description": "Super mega ekstra drill"
+    "product-description": "Super mega ekstra drill",
+    "size": "S",
+    "color": "Biały",
+    "brand": "Reebok",
+    "condition": "Używany"
   },
   {
     "id": 13,
@@ -102,7 +149,11 @@
     "price": 100,
     "images": ["photo/osaka1.jpeg","photo/osaka2.jpeg"],
     "category": "kobieta",
-    "product-description": "Super mega ekstra drill"
+    "product-description": "Super mega ekstra drill",
+    "size": "L",
+    "color": "Czarny",
+    "brand": "Adidas",
+    "condition": "Nowy"
   },
   {
     "id": 14,
@@ -110,7 +161,11 @@
     "price": 220,
     "images": ["photo/osaka1.jpeg","photo/osaka2.jpeg"],
     "category": "sport",
-    "product-description": "Super mega ekstra drill"
+    "product-description": "Super mega ekstra drill",
+    "size": "XL",
+    "color": "Niebieski",
+    "brand": "Nike",
+    "condition": "Używany"
   },
   {
     "id": 15,
@@ -118,7 +173,11 @@
     "price": 200,
     "images": ["photo/osaka1.jpeg","photo/osaka2.jpeg"],
     "category": "sport",
-    "product-description": "Super mega ekstra drill"
+    "product-description": "Super mega ekstra drill",
+    "size": "M",
+    "color": "Czerwony",
+    "brand": "Puma",
+    "condition": "Nowy"
   },
   {
     "id": 16,
@@ -126,7 +185,11 @@
     "price": 100,
     "images": ["photo/osaka1.jpeg","photo/osaka2.jpeg"],
     "category": "sport",
-    "product-description": "Super mega ekstra drill"
+    "product-description": "Super mega ekstra drill",
+    "size": "L",
+    "color": "Zielony",
+    "brand": "Reebok",
+    "condition": "Używany"
   },
   {
     "id": 17,
@@ -134,7 +197,11 @@
     "price": 150,
     "images": ["photo/osaka1.jpeg","photo/osaka2.jpeg"],
     "category": "sport",
-    "product-description": "Super mega ekstra drill"
+    "product-description": "Super mega ekstra drill",
+    "size": "S",
+    "color": "Żółty",
+    "brand": "Adidas",
+    "condition": "Nowy"
   },
   {
     "id": 18,
@@ -142,7 +209,11 @@
     "price": 250,
     "images": ["photo/osaka1.jpeg","photo/osaka2.jpeg"],
     "category": "sport",
-    "product-description": "Super mega ekstra drill"
+    "product-description": "Super mega ekstra drill",
+    "size": "XL",
+    "color": "Czarny",
+    "brand": "Nike",
+    "condition": "Używany"
   },
   {
     "id": 19,
@@ -150,7 +221,11 @@
     "price": 300,
     "images": ["photo/osaka1.jpeg","photo/osaka2.jpeg"],
     "category": "sport",
-    "product-description": "Super mega ekstra drill"
+    "product-description": "Super mega ekstra drill",
+    "size": "M",
+    "color": "Biały",
+    "brand": "Puma",
+    "condition": "Nowy"
   },
   {
     "id": 20,
@@ -158,7 +233,11 @@
     "price": 200,
     "images": ["photo/osaka1.jpeg","photo/osaka2.jpeg"],
     "category": "akcesoria",
-    "product-description": "Super mega ekstra drill"
+    "product-description": "Super mega ekstra drill",
+    "size": "M",
+    "color": "Brązowy",
+    "brand": "Reebok",
+    "condition": "Używany"
   },
   {
     "id": 21,
@@ -166,7 +245,11 @@
     "price": 150,
     "images": ["photo/osaka1.jpeg","photo/osaka2.jpeg"],
     "category": "akcesoria",
-    "product-description": "Super mega ekstra drill"
+    "product-description": "Super mega ekstra drill",
+    "size": "S",
+    "color": "Czarny",
+    "brand": "Adidas",
+    "condition": "Nowy"
   },
   {
     "id": 22,
@@ -174,7 +257,11 @@
     "price": 200,
     "images": ["photo/osaka1.jpeg","photo/osaka2.jpeg"],
     "category": "akcesoria",
-    "product-description": "Super mega ekstra drill"
+    "product-description": "Super mega ekstra drill",
+    "size": "L",
+    "color": "Szary",
+    "brand": "Nike",
+    "condition": "Używany"
   },
   {
     "id": 23,
@@ -182,7 +269,11 @@
     "price": 50,
     "images": ["photo/osaka1.jpeg","photo/osaka2.jpeg"],
     "category": "akcesoria",
-    "product-description": "Super mega ekstra drill"
+    "product-description": "Super mega ekstra drill",
+    "size": "M",
+    "color": "Niebieski",
+    "brand": "Puma",
+    "condition": "Nowy"
   },
   {
     "id": 24,
@@ -190,7 +281,11 @@
     "price": 100,
     "images": ["photo/osaka1.jpeg","photo/osaka2.jpeg"],
     "category": "akcesoria",
-    "product-description": "Super mega ekstra drill"
+    "product-description": "Super mega ekstra drill",
+    "size": "L",
+    "color": "Czerwony",
+    "brand": "Reebok",
+    "condition": "Używany"
   },
   {
     "id": 25,
@@ -198,7 +293,11 @@
     "price": 100,
     "images": ["photo/osaka1.jpeg","photo/osaka2.jpeg"],
     "category": "akcesoria",
-    "product-description": "Super mega ekstra drill"
+    "product-description": "Super mega ekstra drill",
+    "size": "M",
+    "color": "Żółty",
+    "brand": "Adidas",
+    "condition": "Nowy"
   },
   {
     "id": 26,
@@ -206,7 +305,11 @@
     "price": 120,
     "images": ["photo/osaka1.jpeg","photo/osaka2.jpeg","photo/osaka3.jpeg","photo/osaka4.jpeg","photo/osaka5.jpeg"],
     "category": "mezczyzna",
-    "product-description": "Super mega ekstra drill"
+    "product-description": "Super mega ekstra drill",
+    "size": "XL",
+    "color": "Biały",
+    "brand": "Nike",
+    "condition": "Używany"
   },
   {
     "id": 27,
@@ -214,14 +317,23 @@
     "price": 120,
     "images": ["photo/bluzaS2.jpeg","photo/bluzaS1.jpeg","photo/bluzaS3.jpeg","photo/bluzaS4.jpeg","photo/bluzaS5.jpeg","photo/bluzaS6.jpeg","photo/bluzaS7.jpeg"],
     "category": "mezczyzna",
-    "product-description": "Super mega ekstra drill"
+    "product-description": "Super mega ekstra drill",
+    "size": "M",
+    "color": "Niebieski",
+    "brand": "Puma",
+    "condition": "Nowy"
   },
   {
     "id": 28,
     "name": "Spodnie Levis",
     "price": 120,
     "images": ["photo/levis1.jpeg","photo/levis2.jpeg","photo/levis2.jpeg","photo/levis3.jpeg","photo/levis4.jpeg","photo/levis5.jpeg","photo/levis6.jpeg"],
-    "category": "mezczyzna"
+    "category": "mezczyzna",
+    "product-description": "Super mega ekstra drill",
+    "size": "L",
+    "color": "Szary",
+    "brand": "Levis",
+    "condition": "Używany"
   },
   {
     "id": 29,
@@ -229,6 +341,10 @@
     "price": 120,
     "images": ["photo/eng1.jpeg","photo/eng2.jpeg","photo/eng3.jpeg","photo/eng4.jpeg","photo/eng5.jpeg","photo/eng6.jpeg"],
     "category": "mezczyzna",
-    "product-description": "Super mega ekstra drill"
+    "product-description": "Super mega ekstra drill",
+    "size": "S",
+    "color": "Brązowy",
+    "brand": "Burberry",
+    "condition": "Nowy"
   }
 ]

@@ -42,6 +42,9 @@ document.addEventListener('DOMContentLoaded', () => {
                             <p class="card-text">${product.price} PLN</p>
                         </div>
                     </a>
+                    <button class="btn btn-secondary add-to-cart" data-id="${product.id}">
+                        <i class="fas fa-shopping-cart"></i> Dodaj do koszyka
+                    </button>
                 </div>
             `;
 
@@ -51,7 +54,38 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        // Funkcje dodawania do koszyka i ulubionych zostały usunięte
+        setupAddToCartButtons();
+    };
+
+    const setupAddToCartButtons = () => {
+        const addToCartButtons = document.querySelectorAll('.add-to-cart');
+
+        addToCartButtons.forEach(button => {
+            button.addEventListener('click', (event) => {
+                const productId = event.currentTarget.getAttribute('data-id');
+                fetch('products.json')
+                    .then(response => response.json())
+                    .then(products => {
+                        const product = products.find(item => item.id == productId);
+                        if (product) {
+                            addToCart(product);
+                        }
+                    });
+            });
+        });
+    };
+
+    const addToCart = (product) => {
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        const productExists = cart.some(item => item.id === product.id);
+
+        if (productExists) {
+            alert('Produkt już znajduje się w koszyku');
+        } else {
+            cart.push(product);
+            localStorage.setItem('cart', JSON.stringify(cart));
+            alert('Produkt został dodany do koszyka');
+        }
     };
 
     // Funkcja wyświetlająca produkty w koszyku
@@ -62,20 +96,28 @@ document.addEventListener('DOMContentLoaded', () => {
         // Czyszczenie zawartości kontenera
         cartItemsContainer.innerHTML = '';
 
+        // Tworzenie listy produktów
+        const list = document.createElement('ul');
+        list.className = 'list-group w-100';
+
         cart.forEach(product => {
-            let newCartItem = document.createElement('div');
-            newCartItem.classList.add('cart-item');
-            newCartItem.innerHTML = `
-                <img src="${product.image}" alt="${product.name}">
-                <div class="cart-item-info">
-                    <h5>${product.name}</h5>
-                    <p>${product.price} PLN</p>
+            let listItem = document.createElement('li');
+            listItem.className = 'list-group-item d-flex justify-content-between align-items-center';
+            listItem.innerHTML = `
+                <div class="d-flex align-items-center">
+                    <img src="${product.images[0]}" class="img-thumbnail mr-3" style="width: 50px; height: 50px;" alt="${product.name}">
+                    <div>
+                        <h5 class="mb-0">${product.name}</h5>
+                        <small class="text-muted">${product.price} PLN</small>
+                    </div>
                 </div>
-                <button class="remove-btn" data-id="${product.id}">Usuń</button>
+                <button class="btn btn-danger btn-sm remove-btn" data-id="${product.id}">Usuń</button>
             `;
 
-            cartItemsContainer.appendChild(newCartItem);
+            list.appendChild(listItem);
         });
+
+        cartItemsContainer.appendChild(list);
 
         setupRemoveButtons();
         updateTotalPrice();
@@ -97,7 +139,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Funkcja usuwająca produkt z koszyka
     const removeFromCart = (productId) => {
         let cart = JSON.parse(localStorage.getItem('cart')) || [];
-        cart = cart.filter(product => product.id !== productId);
+        cart = cart.filter(product => product.id !== parseInt(productId));
         localStorage.setItem('cart', JSON.stringify(cart));
         updateTotalPrice();
     };
@@ -160,6 +202,10 @@ document.addEventListener('DOMContentLoaded', () => {
                     document.getElementById('product-description').innerHTML = `
                         <p>${product['product-description'] || 'Brak opisu produktu.'}</p>
                     `;
+                    document.getElementById('product-size').textContent = product.size || "N/A";
+                    document.getElementById('product-color').textContent = product.color || "N/A";
+                    document.getElementById('product-brand').textContent = product.brand || "N/A";
+                    document.getElementById('product-condition').textContent = product.condition || "N/A";
 
                     // Dodanie obsługi przycisków
                     document.getElementById('addToCart').addEventListener('click', () => addToCart(product));
@@ -180,81 +226,10 @@ document.addEventListener('DOMContentLoaded', () => {
             cart.push(product);
             localStorage.setItem('cart', JSON.stringify(cart));
             alert('Produkt został dodany do koszyka');
-            displayCartItems();
         }
     };
-
-    const displayCartItems = () => {
-        const cartItemsContainer = document.getElementById('cartItems');
-        const cart = JSON.parse(localStorage.getItem('cart')) || [];
-
-        // Czyszczenie zawartości kontenera
-        cartItemsContainer.innerHTML = '';
-
-        // Tworzenie listy produktów
-        const list = document.createElement('ul');
-        list.className = 'list-group w-100';
-
-        cart.forEach(product => {
-            let listItem = document.createElement('li');
-            listItem.className = 'list-group-item d-flex justify-content-between align-items-center';
-            listItem.innerHTML = `
-                <div class="d-flex align-items-center">
-                    <img src="${product.images[0]}" class="img-thumbnail mr-3" style="width: 50px; height: 50px;" alt="${product.name}">
-                    <div>
-                        <h5 class="mb-0">${product.name}</h5>
-                        <small class="text-muted">${product.price} PLN</small>
-                    </div>
-                </div>
-                <button class="btn btn-danger btn-sm remove-btn" data-id="${product.id}">Usuń</button>
-            `;
-
-            list.appendChild(listItem);
-        });
-
-        cartItemsContainer.appendChild(list);
-
-        setupRemoveButtons('cart');
-        updateTotalPrice();
-    };
-
-    const setupRemoveButtons = (type) => {
-        const removeButtons = document.querySelectorAll('.remove-btn');
-
-        removeButtons.forEach(button => {
-            button.addEventListener('click', (event) => {
-                const productId = event.currentTarget.getAttribute('data-id');
-                removeFromCart(productId);
-                displayCartItems();
-            });
-        });
-    };
-
-    const removeFromCart = (productId) => {
-        let cart = JSON.parse(localStorage.getItem('cart')) || [];
-        cart = cart.filter(product => product.id !== parseInt(productId));
-        localStorage.setItem('cart', JSON.stringify(cart));
-        updateTotalPrice();
-    };
-
-    const updateTotalPrice = () => {
-        const cart = JSON.parse(localStorage.getItem('cart')) || [];
-        const totalPrice = cart.reduce((sum, product) => sum + product.price, 0);
-        document.getElementById('total-price').textContent = totalPrice.toFixed(2);
-    };
-
-    // Czyszczenie koszyka
-    const clearCart = () => {
-        localStorage.removeItem('cart');
-        displayCartItems();
-        updateTotalPrice();
-    };
-
-    const clearCartButton = document.getElementById('clearCart');
-    if (clearCartButton) {
-        clearCartButton.addEventListener('click', clearCart);
-    }
-
-    // Wywołanie funkcji podczas ładowania strony
-    displayCartItems();
 });
+function getProductIdFromUrl() {
+    const params = new URLSearchParams(window.location.search);
+    return parseInt(params.get('id'));
+}
