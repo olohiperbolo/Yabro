@@ -11,57 +11,76 @@ document.addEventListener('DOMContentLoaded', () => {
             registerModal.show();
         });
     }
-    // Obsługa formularza rejestracji
-    document.querySelector('#registerModal .custom-form').addEventListener('submit', function (event) {
-        event.preventDefault();
-        const username = document.getElementById('registerUsername').value;
-        const email = document.getElementById('registerEmail').value;
-        const password = document.getElementById('registerPassword').value;
 
-        fetch('register.php', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ username, email, password }),
-        })
-            .then(response => response.json())
-            .then(data => {
-                if (data.success) {
-                    alert('Rejestracja zakończona sukcesem!');
-                    const registerModal = new bootstrap.Modal(document.getElementById('registerModal'));
-                    registerModal.hide();
-                } else {
-                    alert('Rejestracja nie powiodła się: ' + data.message);
-                }
-            })
-            .catch(error => console.error('Error:', error));
-    });
+    const validateEmail = (email) => {
+        const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return regex.test(email);
+    };
 
-    // Obsługa formularza logowania
-    document.querySelector('#accountModal .custom-form').addEventListener('submit', function (event) {
-        event.preventDefault();
-        const email = document.getElementById('loginEmail').value;
-        const password = document.getElementById('loginPassword').value;
+    // Funkcja obsługująca rejestrację
+    const registerForm = document.querySelector('#registerModal form');
+    if (registerForm) {
+        registerForm.addEventListener('submit', (event) => {
+            event.preventDefault();
 
-        fetch('login.php', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ email, password }),
-        })
-            .then(response => response.json())
-            .then(data => {
-                if (data.success) {
-                    alert('Logowanie zakończone sukcesem!');
-                    window.location.reload();
-                } else {
-                    alert('Logowanie nie powiodło się: ' + data.message);
-                }
-            })
-            .catch(error => console.error('Error:', error));
-    });
+            const username = document.getElementById('registerUsername').value;
+            const email = document.getElementById('registerEmail').value;
+            const password = document.getElementById('registerPassword').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+
+            if (!validateEmail(email)) {
+                alert('Proszę podać prawidłowy adres e-mail.');
+                return;
+            }
+
+            if (password.length < 8) {
+                alert('Hasło musi zawierać co najmniej 8 znaków.');
+                return;
+            }
+
+            if (password !== confirmPassword) {
+                alert('Hasła muszą być zgodne.');
+                return;
+            }
+
+            const users = JSON.parse(localStorage.getItem('users')) || [];
+
+            if (users.find(user => user.email === email)) {
+                alert('Użytkownik z tym emailem już istnieje');
+                return;
+            }
+
+            users.push({ username, email, password });
+            localStorage.setItem('users', JSON.stringify(users));
+            alert('Rejestracja zakończona sukcesem');
+            const registerModal = new bootstrap.Modal(document.getElementById('registerModal'));
+            registerModal.hide();
+        });
+    }
+
+
+    // Funkcja obsługująca logowanie
+    const loginForm = document.querySelector('#accountModal form');
+    if (loginForm) {
+        loginForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+
+            const email = document.getElementById('loginEmail').value;
+            const password = document.getElementById('loginPassword').value;
+
+            const users = JSON.parse(localStorage.getItem('users')) || [];
+
+            const user = users.find(user => user.email === email && user.password === password);
+
+            if (user) {
+                alert('Logowanie zakończone sukcesem');
+                const accountModal = new bootstrap.Modal(document.getElementById('accountModal'));
+                accountModal.hide();
+            } else {
+                alert('Logowanie nie powiodło się: Nieprawidłowy email lub hasło');
+            }
+        });
+    }
 
     // Inicjalizacja sekcji produktów na podstawie ich kategorii
     const sections = {
@@ -279,6 +298,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 });
+
 function getProductIdFromUrl() {
     const params = new URLSearchParams(window.location.search);
     return parseInt(params.get('id'));
