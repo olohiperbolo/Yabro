@@ -69,6 +69,67 @@
     </div>
 </nav>
 <main>
+    <div class="modal fade" id="accountModal" tabindex="-1" aria-labelledby="accountModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="accountModalLabel">Zaloguj się</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Zostań Klubowiczem — nie przegap okazji, ofert, rabatów i bonusy rabatowe.</p>
+                    <form class="custom-form">
+                        <div class="mb-3">
+                            <label for="loginEmail" class="form-label">E-mail</label>
+                            <input type="email" class="form-control" id="loginEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="loginPassword" class="form-label">Hasło</label>
+                            <input type="password" class="form-control" id="loginPassword" required>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="rememberMe">
+                            <label class="form-check-label" for="rememberMe">Pamiętaj mnie</label>
+                        </div>
+                        <a href="#" class="forgot-password">Nie pamiętasz hasła?</a>
+                        <button type="submit" class="btn btn-primary w-100">Zaloguj się</button>
+                        <button type="button" class="btn btn-outline-secondary w-100 mt-3" data-bs-dismiss="modal">Dołącz do nas</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="registerModalLabel">Dołącz do YABRO</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Dołącz do YABRO — nie przegap okazji, ofert, rabatów i bonusów rabatowych.</p>
+                    <form class="custom-form">
+                        <div class="mb-3">
+                            <label for="registerEmail" class="form-label">E-mail</label>
+                            <input type="email" class="form-control" id="registerEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="registerPassword" class="form-label">Utwórz hasło</label>
+                            <input type="password" class="form-control" id="registerPassword" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="registerDob" class="form-label">Data urodzenia</label>
+                            <input type="date" class="form-control" id="registerDob" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Dołącz</button>
+                        <button type="button" class="btn btn-outline-secondary w-100 mt-3" data-bs-dismiss="modal">Zamknij</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="container mt-5">
         <div class="product-container">
             <div id="productCarousel" class="carousel slide product-carousel" data-bs-ride="carousel">
