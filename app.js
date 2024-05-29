@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
             displayProductsByCategory(products);
         });
 
-    // Funkcja do wyświetlania produktów w odpowiednich sekcjach według kategorii
+    // Funkcja do wyświetlania produktów według kategorii
     const displayProductsByCategory = (products) => {
         products.forEach(product => {
             let newProduct = document.createElement('div');
@@ -164,7 +164,6 @@ document.addEventListener('DOMContentLoaded', () => {
         clearCartButton.addEventListener('click', clearCart);
     }
 
-    // Wywołanie funkcji podczas ładowania strony
     displayCartItems();
 });
 
