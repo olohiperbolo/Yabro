@@ -11,6 +11,57 @@ document.addEventListener('DOMContentLoaded', () => {
             registerModal.show();
         });
     }
+    // Obsługa formularza rejestracji
+    document.querySelector('#registerModal .custom-form').addEventListener('submit', function (event) {
+        event.preventDefault();
+        const username = document.getElementById('registerUsername').value;
+        const email = document.getElementById('registerEmail').value;
+        const password = document.getElementById('registerPassword').value;
+
+        fetch('register.php', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ username, email, password }),
+        })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    alert('Rejestracja zakończona sukcesem!');
+                    const registerModal = new bootstrap.Modal(document.getElementById('registerModal'));
+                    registerModal.hide();
+                } else {
+                    alert('Rejestracja nie powiodła się: ' + data.message);
+                }
+            })
+            .catch(error => console.error('Error:', error));
+    });
+
+    // Obsługa formularza logowania
+    document.querySelector('#accountModal .custom-form').addEventListener('submit', function (event) {
+        event.preventDefault();
+        const email = document.getElementById('loginEmail').value;
+        const password = document.getElementById('loginPassword').value;
+
+        fetch('login.php', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ email, password }),
+        })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    alert('Logowanie zakończone sukcesem!');
+                    window.location.reload();
+                } else {
+                    alert('Logowanie nie powiodło się: ' + data.message);
+                }
+            })
+            .catch(error => console.error('Error:', error));
+    });
 
     // Inicjalizacja sekcji produktów na podstawie ich kategorii
     const sections = {
